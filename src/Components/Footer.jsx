@@ -13,7 +13,7 @@ export default function Footer() {
 
 
   <div className='flex flex-col items-center justify-center  '>
-    <img src='images/birch.png'  alt='birch-logo' className='w-[120px] h-[120px]  '/>
+    <img src='images/Birch.png'  alt='birch-logo' className='w-[120px] h-[120px]  '/>
 <div className='text-center ml-[20px]'>
 
 <p className='text-[20px] font-[600]'>
