@@ -4,7 +4,7 @@ export default function Stayhome({homeRef}) {
   return (
     <div className='mission h-[100vh] w-[100vw]'>
 
-    <div className='w-[90vw] p-[25px] m-[auto] pt-[80px]'>
+    <div className='w-[90vw] p-[25px] m-[auto] pt-[80px]' ref={homeRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
     <div className= 'flex items-center justify-between gap-[20px]'>
        <div className='w-[53%] h-[70vh] mt-[30px] text-center'>
            <h1 className='text-[45px] font-[800] text-[#88c4fc] mb-[25px]'>

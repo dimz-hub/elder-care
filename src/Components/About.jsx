@@ -1,49 +1,50 @@
-import React, {useState, useEffect,useRef} from 'react'
+import React, { useEffect,useRef} from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import {Link} from 'react-router-dom'
-import AnimatedPage from './AnimatedPage'
-import {motion, useAnimation} from 'framer-motion'
+
 
 
 export default function About() {
 
-  // const useIntersectionObserver = (callback, options = {}) => {
-  //   const targetRef = useRef(null);
-  
-  //   useEffect(() => {
-  //     const observer = new IntersectionObserver(callback, options);
-  //     const targetElement = targetRef.current;
-  
-  //     if (targetElement) {
-  //       observer.observe(targetElement);
-  //     }
-  
-  //     return () => {
-  //       if (targetElement) {
-  //         observer.unobserve(targetElement);
-  //       }
-  //     };
-  //   }, [callback, options]);
-  
-  //   return targetRef;
-  // };
+  const useIntersectionObserver = (callback, options = {}) => {
+    const targetRef = useRef(null);
+ 
+    useEffect(() => {
+      const observer = new IntersectionObserver(callback, options);
+      const targetElement = targetRef.current;
+ 
+      if (targetElement) {
+        observer.observe(targetElement);
+      }
+ 
+      return () => {
+        if (targetElement) {
+         observer.unobserve(targetElement);
+        }
+      };
+    }, [callback, options]);
+ 
+    return targetRef;
+  };
 
 
-  // const topRef = useIntersectionObserver((entries) => handleIntersection(entries, 'top'), { threshold: 0.5 });
-  // const aboutRef = useIntersectionObserver((entries) => handleIntersection(entries, 'about'), { threshold: 0.5 });
-  // const modernRef = useIntersectionObserver((entries) => handleIntersection(entries, 'modern'), { threshold: 0.5 });
-  // const contactRef = useIntersectionObserver((entries) => handleIntersection(entries, 'contact'), { threshold: 0.5 });
+  const topRef = useIntersectionObserver((entries) => handleIntersection(entries, 'top'), { threshold: 0.5 });
+  const storyRef = useIntersectionObserver((entries) => handleIntersection(entries, 'story'), { threshold: 0.5 });
+  const modernRef = useIntersectionObserver((entries) => handleIntersection(entries, 'modern'), { threshold: 0.5 });
+  const startRef = useIntersectionObserver((entries) => handleIntersection(entries, 'start'), { threshold: 0.5 });
 
-  // const handleIntersection = (entries, section) => {
-  //   entries.forEach((entry) => {
-  //     if (entry.isIntersecting) {
-  //       // Add your animation logic for the specific section here
-  //       const element = entry.target;
-  //       element.style.opacity = 1;
-  //     }
-  //   });
-  // };
+
+const handleIntersection = (entries, section) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+       // Add your animation logic for the specific section here
+      const element = entry.target;
+        element.style.opacity = 1;
+       //  element.classList.add('fadeInAnimation');
+     }
+    });
+  };
 
 
 
@@ -62,14 +63,14 @@ export default function About() {
         <Navbar  />
         </div>
     
-    <div className= '  h-[70vh] w-[100vw] flex items-center justify-center text-[white] text-[80px] text-center font-[500] ' >
+    <div className= '  h-[70vh] w-[100vw] flex items-center justify-center text-[white] text-[80px] text-center font-[500] '  ref={topRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }} >
         We want you to get the <br/> care you deserve.
     </div>
         
       </div>
     </div>
 
-    <div className= 'section  w-[90vw] m-[auto] p-[25px] flex items-center about-section mt-[100px]'>
+    <div className= 'section  w-[90vw] m-[auto] p-[25px] flex items-center about-section mt-[100px]'  ref={storyRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
       <div className='section'>
         <h1 className='text-[42px] text-center text-[#7FC7D9] font-[500] mb-[40px]' >Transforming assisted living for disabilities and challenging behaviour</h1>
         <p className='text-[26px] text-justify'>
@@ -94,7 +95,7 @@ export default function About() {
        
        <h1 className='text-[42px] text-center text-[#7FC7D9] font-[500] mb-[40px]'>A modern approach</h1>
 
-<div className= 'modern'>
+<div className= 'modern'  ref={modernRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
 
       <div>
         <img src='images/modern3.jpg' alt='transforming assited living' className='rounded-[20px] ' />
@@ -112,7 +113,7 @@ export default function About() {
     
 
     </div>
-    <div className='w-[100vw] h-[40vh] bg-[#7FC7D9] flex flex-col items-center justify-center' >
+    <div className='w-[100vw] h-[40vh] bg-[#7FC7D9] flex flex-col items-center justify-center'  ref={startRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }} >
          <h1 className='text-[white] font-[400] text-[45px]'>Get started with Birch, today!😄</h1>
           <Link to={'/contact'}>
          <button className=' hero-button p-3 outline-none bg-[black] text-[white]  w-[16rem] rounded-[10px] mt-[15px] font-[600] '>

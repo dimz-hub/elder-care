@@ -3,7 +3,7 @@ import React from 'react'
 export default function Hero({topRef}) {
   return (
     <div className= ' hero-body w-[90vw] m-[auto] p-[25px] mt-[60px] h-[50vh]' >
-      <div className='w-[45vw] '>
+      <div className='w-[45vw] ' ref={topRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}> 
       
 
       <h2 className='text-[44px] font-[600] text-[white] '>

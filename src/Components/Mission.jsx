@@ -5,14 +5,14 @@ import Aos from 'aos'
 
 export default function Mission({missionRef}) {
 
-    useEffect(() => {
-          Aos.init({duration:3000, delay:1000})
-    },[])
+    // useEffect(() => {
+    //       Aos.init({duration:3000, delay:1000})
+    // },[])
 
   return (
     <div className='mission w-[100vw] [h-100vh]'>
 
-    <div className='w-[90vw] p-[25px] m-[auto] pt-[80px] mt-[-120px] ' >
+    <div className='w-[90vw] p-[25px] m-[auto] pt-[80px] mt-[-120px] ' ref={missionRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }} >
      <div className= ' flex justify-between items-center gap-[20px]'>
         <div className='w-[53%] h-[70vh] mt-[30px] text-center'>
             <h1 className='text-[45px] font-[800] text-[#88c4fc] mb-[25px]'>

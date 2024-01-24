@@ -4,7 +4,7 @@ export default function Savehaven({saveRef}) {
   return (
     <div className='mission w-[100vw] h-[100vh]'>
 
-    <div className='w-[90vw] p-[25px] m-[auto] pt-[80px] safehaven' >
+    <div className='w-[90vw] p-[25px] m-[auto] pt-[80px] safehaven' ref={saveRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }} >
      <div className= 'flex  justify-between gap-[20px]'>
    
         <div className=''>

@@ -1,8 +1,59 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
 export default function ServicePage() {
+
+
+  const useIntersectionObserver = (callback, options = {}) => {
+    const targetRef = useRef(null);
+ 
+    useEffect(() => {
+      const observer = new IntersectionObserver(callback, options);
+      const targetElement = targetRef.current;
+ 
+      if (targetElement) {
+        observer.observe(targetElement);
+      }
+ 
+      return () => {
+        if (targetElement) {
+         observer.unobserve(targetElement);
+        }
+      };
+    }, [callback, options]);
+ 
+    return targetRef;
+  };
+
+
+  const topRef = useIntersectionObserver((entries) => handleIntersection(entries, 'top'), { threshold: 0.5 });
+  const servicesRef = useIntersectionObserver((entries) => handleIntersection(entries, 'services'), { threshold: 0.5 });
+  const summaryRef = useIntersectionObserver((entries) => handleIntersection(entries, 'summary'), { threshold: 0.5 });
+  const clientRef = useIntersectionObserver((entries) => handleIntersection(entries, 'client'), { threshold: 0.5 });
+  const serveRef = useIntersectionObserver((entries) => handleIntersection(entries, 'serve'), { threshold: 0.5 });
+  const col1Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col1'), { threshold: 0.5 });
+  const col2Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col2'), { threshold: 0.5 });
+  const col3Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col3'), { threshold: 0.5 });
+  const col4Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col4'), { threshold: 0.5 });
+  const col5Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col5'), { threshold: 0.5 });
+  const col6Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col6'), { threshold: 0.5 });
+
+
+const handleIntersection = (entries, section) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+       // Add your animation logic for the specific section here
+      const element = entry.target;
+        element.style.opacity = 1;
+       //  element.classList.add('fadeInAnimation');
+     }
+    });
+  };
+
+
+
+
   return (
     <div>
      
@@ -13,7 +64,7 @@ export default function ServicePage() {
         <Navbar  />
         </div>
 
-        <div className= 'h-[70vh] w-[80vw] m-[auto] flex items-center justify-center text-[white] text-[80px] text-center font-[500]'>
+        <div className= 'h-[70vh] w-[80vw] m-[auto] flex items-center justify-center text-[white] text-[80px] text-center font-[500]'  ref={topRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
         Get assisted living for disabilities and <br/> challenging behaviour
         </div>
 
@@ -22,19 +73,19 @@ export default function ServicePage() {
    
    <div className=''>
 
-    <div className='w-[90vw] m-[auto] p-[25px]'>
-        <h1 className='w-[90vw] flex items-center justify-center font-[600] text-[45px]'>
+    <div className='w-[90vw] m-[auto] p-[25px]' >
+        <h1 className='w-[90vw] flex items-center justify-center font-[600] text-[45px]'  ref={servicesRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             Our services
         </h1>
 
-        <div className='w-[90vw] flex justify-center text-[30px]  mt-[50px] text-center  mb-[50px]'>
+        <div className='w-[90vw] flex justify-center text-[30px]  mt-[50px] text-center  mb-[50px]'  ref={serveRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
         Domiciliary care, supported living, live-in care, companionship, palliative care, and respite care from
       a comprehensive suite of services designed to meet the diverse needs of individuals within the healthcare and support sector.
 
         </div>
-        <div className='flex items-center justify-center gap-[50px] mb-[40px]'>
+        <div className='flex items-center justify-center gap-[50px] mb-[40px] flex-wrap'  >
 
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col'>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col' ref={col1Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Domiciliary Care </p>
        <img src='images/medical.png' alt='domiciliary care' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px]'>
@@ -44,7 +95,7 @@ export default function ServicePage() {
 
       </p>
             </div>
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col'>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col' ref={col2Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Supported Living </p>
        <img src='images/supported-living.png' alt='supported living' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px]'>
@@ -54,7 +105,7 @@ export default function ServicePage() {
 
       </p>
             </div>
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col'>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col' ref={col3Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Live-in Care </p>
        <img src='images/live-in-care.png' alt='Live-in Care' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px]'>
@@ -65,11 +116,9 @@ export default function ServicePage() {
 
       </p>
             </div>
-        </div>
+      
 
-        <div className='flex items-center justify-center gap-[50px]'>
-
-        <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col'>
+        <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col' ref={col4Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Companionship </p>
        <img src='images/companionship.png' alt='Companionship' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px]'>
@@ -83,7 +132,7 @@ export default function ServicePage() {
             </div>
 
 
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col'>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col' ref={col5Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Palliative Care </p>
        <img src='images/care.png' alt='Palliative Care' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px]'>
@@ -93,7 +142,7 @@ export default function ServicePage() {
 
       </p>
             </div>
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col'>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col' ref={col6Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Respite Care </p>
        <img src='images/respite-care.png' alt='Respite Care' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px]'>
@@ -107,7 +156,7 @@ export default function ServicePage() {
         </div>
     </div>
 
-        <div className='p-[25px] bg-[#7FC7D9] rounded-[15px] flex justify-center w-[90vw] m-[auto] text-[20px] font-[600] text-[white] '>
+        <div className='p-[25px] bg-[#7FC7D9] rounded-[15px] flex justify-center w-[90vw] m-[auto] text-[20px] font-[600] text-[white] '  ref={summaryRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
         In summary, these services collectively underscore a commitment to individualized care, prioritizing dignity, independence, and holistic well-being. 
          Whether addressing basic daily tasks or providing emotional support during challenging times,businesses offering these services contribute
          significantly to the overall health and quality of life for those they serve.
@@ -117,7 +166,7 @@ export default function ServicePage() {
 
    <div  className='toppage'>
 
-<div className='serve h-[100vh] w-[100vw] flex items-center justify-center'>
+<div className='serve h-[100vh] w-[100vw] flex items-center justify-center'  ref={clientRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
   <div className='serve-container text-[white] '>
   <p className='text-[45px]'>
   “I underestimated how hard it was to find support for my adult son who has challenging behaviour, 

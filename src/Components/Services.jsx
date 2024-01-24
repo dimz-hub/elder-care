@@ -6,7 +6,7 @@ export default function Services({servicesRef}) {
     <div className='services bg-[#7FC7D9] w-[100vw]  h-[100vh]'>
       <div >
 
- <div className='w-[90vw] m-[auto] p-[25px] flex items-center justify-center flex-col ' >
+ <div className='w-[90vw] m-[auto] p-[25px] flex items-center justify-center flex-col ' ref={servicesRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }} >
 
     <h1 className = 'text-[white] text-[40px] font-[600] mb-[50px]' >Our Services</h1>
     
