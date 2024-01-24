@@ -1,5 +1,5 @@
 import React, {useRef, useEffect} from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate, useNavigate , } from 'react-router-dom';
 import LandingPage from './Components/LandingPage';
 import Enquiry from './Components/Enquiry';
 import Signup from './Components/Signup';
@@ -8,12 +8,15 @@ import Signin from './Components/Signin';
 import About from './Components/About';
 import ServicePage from './Components/ServicePage';
 import ContactPage from './Components/ContactPage'
-import {Aos} from 'aos'
-import 'aos/dist/aos.css'
+import PrivateRoute from './Components/PrivateRoute';
+import { useAuthContext } from './util/AuthContext';
 
 
 function App() {
 
+
+  const {currentUser} = useAuthContext()
+ const navigate= useNavigate()
 
   const useIntersectionObserver = (callback, options = {}) => {
     const targetRef = useRef(null);
@@ -61,18 +64,22 @@ const handleIntersection = (entries, section) => {
   <Route path='/' element = {<LandingPage />} />
  <Route path='/enquiry' element = {<Enquiry/>} />
  <Route path='/signup' element = {<Signup/>} />
- <Route path='/admin' element = {<Admin/>} />
  <Route path='/signin' element = {<Signin/>} />
  <Route path='/admin' element = {<Admin/>} />
  <Route path='/services' element = {<ServicePage/>} />
  <Route path='/about' element = {<About/>} />
  <Route path='/contact' element = {<ContactPage contactRef={contactRef} />} />
-  {/* <Route path='/signup' element = {<SignUp />} />
-  <Route path='/chat' element = {
-    <ProtectedRoute>
-    <Chat />
-    </ProtectedRoute>
-  } /> */} 
+
+  <Route path='/admin' element = {
+    <PrivateRoute>
+    <Admin />
+    </PrivateRoute>
+  } />   
+  {/* <PrivateRoute exact  path='/admin' element={<Admin/>}/> */}
+  {/* <Route
+        path="/admin"
+        element={currentUser ? <Admin /> : <Navigate to="/login" />}
+      /> */}
  </Routes>
     </div>
   );

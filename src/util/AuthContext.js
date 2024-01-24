@@ -17,9 +17,11 @@ function createUser (email, password) {
 }
 
 const [currentUser,setCurrentUser] = useState(null)
+const [loading,setLoading] = useState(true)
 useEffect(() => {
 const unsub = onAuthStateChanged(auth, (user) => {
        setCurrentUser(user)
+       setLoading(false)
       });
 
       return () => {
@@ -34,7 +36,7 @@ const unsub = onAuthStateChanged(auth, (user) => {
 return (
 
     <AuthContext.Provider value={{createUser, currentUser}}>
-           {children}
+           { !loading && children}
     </AuthContext.Provider>
         )
 

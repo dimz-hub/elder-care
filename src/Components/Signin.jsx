@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
-import {signInWithEmailAndPassword } from "firebase/auth";
+// import {signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../util/firebase';
+import {  setPersistence, signInWithEmailAndPassword, browserSessionPersistence } from "firebase/auth";
 
 export default function Signin() {
     const [email, setEmail] = useState('')
@@ -16,9 +17,13 @@ export default function Signin() {
     async function handleSubmit(e) {
       e.preventDefault()
       try{
-        await signInWithEmailAndPassword(auth, email, password)
-    navigate('/admin')
 
+        //  await setPersistence(auth, browserSessionPersistence);
+
+        // Sign in with email and password
+        await signInWithEmailAndPassword(auth, email, password);
+        
+        navigate('/admin')
 
       } catch(err) {
         setError(true)
@@ -39,7 +44,7 @@ export default function Signin() {
   
          <h2 className='font-[500] text-xl xs:mb-[40px] text-[white]'>SignIn</h2>
          <p className='text-[white] font-[500] text-[22px]'>For admin use only </p>
-         <form onSubmit={handleSubmit}  className='flex flex-col items-center justify-center gap-[30px] mt-[10px] '>
+         <form onSubmit={ (e) =>handleSubmit(e)}  className='flex flex-col items-center justify-center gap-[30px] mt-[10px] '>
           <span className = ' xs:mb-[20px]'>
           <input type='email' id='email' className=' signup-input rounded-[10px] text-[black]  h-[40px] w-[300px]' placeholder='email' onChange={(e) => setEmail(e.target.value)}  required/>
           </span>

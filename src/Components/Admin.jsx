@@ -33,7 +33,7 @@ export default function Admin() {
     };
 
     fetchData();
-  }, [currentUser.uid]);
+  }, [currentUser?.uid]);
 
   function timeAgo(createdAtTimestamp) {
     // Convert the createdAt timestamp to a Date object
