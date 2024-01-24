@@ -22,7 +22,7 @@ export default function Contact({contactRef}) {
           <h3 className='font-[600] text-[50px]'>Get in touch with us</h3>
           <div>
             <div className='flex gap-[20px] items-center'>
-                <div className='font-[500] text-[40px] ' >Phone Numbers:</div>
+                <div className='font-[500] text-[40px] ' >Numbers:</div>
                 <div className='flex items-center gap-[10px] mt-[10px]'>
  
             <p className='text-[20px] text-[grey] font-[600]'>07597936369</p>

@@ -30,7 +30,7 @@ export default function Mission({missionRef}) {
         <div>
             
 
-        <img src='images/elder-sunset.jpg' alt='elder watching sunset'  className = ' image w-[35vw] h-[73vh] object-cover section-image rounded-[20px]  hover:w-[37vw] hover:h-[75vh] mt-[16rem]'/>
+        <img src='images/elder-sunset.jpg' alt='elder watching sunset'  className = ' image w-[35vw] h-[73vh] object-cover section-image rounded-[20px]  hover:w-[37vw] hover:h-[75vh] mt-[13rem]'/>
      
             </div>
      
