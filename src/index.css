@@ -1,0 +1,271 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+  width: 0.4rem;
+}
+body::-webkit-scrollbar-thumb {
+   background-color: rgb(241, 237, 238); 
+  border-radius: 30px;
+
+  
+}
+
+body::-webkit-scrollbar-track{
+  background-color: rgba(0,0,0,0.7);
+}
+
+
+/* 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+
+.hero{
+  background: url('../public/images/elderwoman.jpg') center/cover no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position:relative
+}
+
+.hero-container{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;
+  left: 0; 
+
+  
+}
+.about{
+  background: url('../public/images/about4.jpg') center/cover no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position:relative
+}
+
+.about-container{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;
+  left: 0; 
+
+  
+}
+.service-page{
+  background: url('../public/images/modern1.jpg') center/cover no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position:relative
+}
+
+.service-page-container{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;
+  left: 0; 
+
+  
+}
+.serve{
+  /* background: url('../public/images/client4.jpg') center/cover no-repeat; */
+  height: 100vh;
+  width: 100vw;
+  position:relative;
+  background:  rgba(136, 196, 252, 0.8);  ;
+  margin-top: 100px;
+}
+
+.serve-container{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;
+  left: 0; 
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+
+  
+}
+
+.navbar-black{
+background: rgba(0,0,0,0.4);
+ /* transition: 0.5s ease-in-out 1s;  */
+
+}
+
+
+.navlinks-fixed span:hover{
+  background-color: rgba(255, 253, 253, 0.4);
+  padding: 5px;
+  border-radius: 5px;
+  color: black; 
+  font-weight: 600;
+  cursor: pointer;
+}
+.navlinks-scrolled span:hover{
+   background-color: rgba(255, 253, 253, 0.4);
+   padding: 5px;
+   border-radius: 5px;
+   color: black; 
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.hero-button:hover{
+  background: transparent;
+  border: 1px solid white;
+}
+
+.hero-body p {
+opacity: 0;
+animation: fadeIn 3s ease-out 0.5s forwards;
+} 
+.hero-body h2 {
+opacity: 0;
+animation: fadeIn 3s ease-out 0.5s forwards;
+} 
+
+
+
+
+@keyframes fadeIn {
+  to{
+    opacity: 1;
+  }
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: absolute;
+  transition: 0.5s ;
+}
+.overlay:hover{
+  background: rgba(226, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+
+.mission{
+   background-color: rgba(136, 196, 252, 0.1); 
+
+}
+
+.service-col{
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+  
+}
+
+.serve-col{
+  box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.2);
+
+}
+
+.section-image{
+  box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.4);
+}
+
+
+.client-review{
+  background: url('../public/images/women3.jpg') center/cover no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position:relative
+}
+
+.client-review-container{
+  width: 100%;
+  height: 100%;
+  background: rgba(220, 242, 241, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0; 
+
+  
+}
+
+.enquiry-input{
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 400px;
+    height: 36px;
+    color: black;
+}
+.enquiry-input:focus{
+  outline: none;
+}
+.enquiry-textarea:focus{
+  outline: none;
+}
+
+.signup-input:focus{
+  outline: none;
+}
+
+.about-section{
+  display: grid;
+  grid-template-columns: 45vw 35vw;
+  justify-content: center;
+  gap: 40px;
+}
+.modern{
+  display: grid;
+  grid-template-columns: 35vw 45vw;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 85px;
+}
+
+.message{
+  max-width: 70%;
+  color: red;
+  /* display: grid;
+  grid-template-columns: 30vw 70vw;
+  overflow: scroll; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* .animatedElement {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fadeInAnimation {
+  opacity: 1 !important; /* Use !important to override conflicting styles */
+/* }  */
