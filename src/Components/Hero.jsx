@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Hero({topRef}) {
   return (
@@ -13,10 +14,11 @@ export default function Hero({topRef}) {
         Get accessible and personalised in-person assisted living <br />so you experience life's great moments with loved ones <br /> no matter your disability or challenging behaviour.
       </p>
      
-
+ <Link to={'/enquiry'}>
       <button className=' hero-button p-3 outline-none bg-[black] text-[white] ml-[150px] w-[12rem] rounded-[10px] mt-[15px] font-[600] '>
         Enquiry
       </button>
+ </Link>
       </div>
     </div>
   )

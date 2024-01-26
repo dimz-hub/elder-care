@@ -15,7 +15,7 @@ export default function Contact({contactRef}) {
 
   return (
     <div className='w-[100vw] h-[100vh] mission flex items-center justify-center ' >
-        <div className='w-[90vw] m-[auto]' ref={contactRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+        <div className='w-[90vw] text-[white] m-[auto]' ref={contactRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
           <div className='flex items-center justify-center gap-[50px]'>
 
             <div>
@@ -25,8 +25,8 @@ export default function Contact({contactRef}) {
                 <div className='font-[500] text-[40px] ' >Numbers:</div>
                 <div className='flex items-center gap-[10px] mt-[10px]'>
  
-            <p className='text-[20px] text-[grey] font-[600]'>07597936369</p>
-            <p className='text-[20px] text-[grey] font-[600]'>07724537007</p>
+            <p className='text-[20px]  font-[600]'>07597936369</p>
+            <p className='text-[20px]  font-[600]'>07724537007</p>
                 </div>
             </div>
             <div className='flex items-center gap-[20px]'>

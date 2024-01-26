@@ -36,7 +36,7 @@ export default function Signin() {
     return (
       <div className=' h-[100vh] w-[100vw]  flex items-center justify-center'>
   
-      <div className='signup flex flex-col items-center rounded-[20px] h-[70vh] w-[50%] bg-[#7FC7D9] pt-[40px] gap-[px] xs:w-[100%] xs:h-[100%] xs:rounded-none  xs:pt-[75px] '>
+      <div className='signup flex flex-col items-center rounded-[20px] h-[70vh] w-[50%] bg-[#294B29] pt-[40px] gap-[px] xs:w-[100%] xs:h-[100%] xs:rounded-none  xs:pt-[75px] '>
         
          <h1 className='mb-[10px] font-bold text-2xl text-[white]'>
           BIRCH CARE

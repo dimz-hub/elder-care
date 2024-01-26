@@ -5,6 +5,12 @@ import Footer from './Footer'
 
 export default function ContactPage() {
 
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const useIntersectionObserver = (callback, options = {}) => {
     const targetRef = useRef(null);
  
@@ -43,7 +49,7 @@ const handleIntersection = (entries, section) => {
 
   return (
     <div>
-<div className='bg-[#7FC7D9]'>
+<div className='mission'>
 <Navbar/>
 </div>
 <Contact contactRef={ contactRef}/>

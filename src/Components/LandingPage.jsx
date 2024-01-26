@@ -9,7 +9,18 @@ import Team from './Team'
 import Contact from './Contact'
 import Footer from './Footer'
 
+
+
+
+
+
+
 export default function LandingPage() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   const useIntersectionObserver = (callback, options = {}) => {
      const targetRef = useRef(null);

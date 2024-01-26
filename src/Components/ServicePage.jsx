@@ -5,6 +5,11 @@ import Footer from './Footer'
 export default function ServicePage() {
 
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   const useIntersectionObserver = (callback, options = {}) => {
     const targetRef = useRef(null);
  
@@ -58,13 +63,13 @@ const handleIntersection = (entries, section) => {
     <div>
      
     <div className='service-page h-[100vh] w-[100vw]'>
-      <div className='service-page-container'>
+      <div className='service-page-container' ref={topRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
         <div >
 
         <Navbar  />
         </div>
 
-        <div className= 'h-[70vh] w-[80vw] m-[auto] flex items-center justify-center text-[white] text-[80px] text-center font-[500]'  ref={topRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+        <div className= 'h-[70vh] w-[80vw] m-[auto] flex items-center justify-center text-[white] text-[80px] text-center font-[500]'  >
         Get assisted living for disabilities and <br/> challenging behaviour
         </div>
 
@@ -74,7 +79,7 @@ const handleIntersection = (entries, section) => {
    <div className=''>
 
     <div className='w-[90vw] m-[auto] p-[25px]' >
-        <h1 className='w-[90vw] flex items-center justify-center font-[600] text-[45px]'  ref={servicesRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+        <h1 className='w-[90vw] flex items-center text-[#294B29]  justify-center font-[600] text-[45px]'  ref={servicesRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             Our services
         </h1>
 
@@ -85,9 +90,9 @@ const handleIntersection = (entries, section) => {
         </div>
         <div className='flex items-center justify-center gap-[50px] mb-[40px] flex-wrap'  >
 
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col' ref={col1Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh] text-[white] bg-[#294B29] gap-[20px] rounded-[15px] serve-col' ref={col1Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Domiciliary Care </p>
-       <img src='images/medical.png' alt='domiciliary care' className= 'w-[65px] h-[65px]'/> 
+       <img src='images/dom.png' alt='domiciliary care' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px]'>
       Domiciliary care is a cornerstone service that provides personalized support within the comfort of an individual's home. 
       It encompasses assistance with daily tasks, ranging from personal hygiene to medication management. By prioritizing 
@@ -95,9 +100,9 @@ const handleIntersection = (entries, section) => {
 
       </p>
             </div>
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col' ref={col2Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#294B29] text-[white] gap-[20px] rounded-[15px] serve-col' ref={col2Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Supported Living </p>
-       <img src='images/supported-living.png' alt='supported living' className= 'w-[65px] h-[65px]'/> 
+       <img src='images/dom-care.png' alt='supported living' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px]'>
       Supported living takes the concept of independence to the next level, creating a supportive environment for individuals with diverse needs.
        This service extends beyond addressing physical health concerns to include mental and emotional well-being. Through tailored assistance, 
@@ -105,9 +110,9 @@ const handleIntersection = (entries, section) => {
 
       </p>
             </div>
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col' ref={col3Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#294B29] text-[white] gap-[20px] rounded-[15px] serve-col' ref={col3Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Live-in Care </p>
-       <img src='images/live-in-care.png' alt='Live-in Care' className= 'w-[65px] h-[65px]'/> 
+       <img src='images/home.png' alt='Live-in Care' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px]'>
       Live-in care offers continuous support, ensuring individuals receive around-the-clock
        assistance within their homes. This service is particularly beneficial for those with
@@ -118,9 +123,9 @@ const handleIntersection = (entries, section) => {
             </div>
       
 
-        <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col' ref={col4Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+        <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#294B29] text-[white] gap-[20px] rounded-[15px] serve-col' ref={col4Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Companionship </p>
-       <img src='images/companionship.png' alt='Companionship' className= 'w-[65px] h-[65px]'/> 
+       <img src='images/friends.png' alt='Companionship' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px]'>
       Companionship services recognize the significance of social interaction in overall health. 
       Through engaging conversations, shared activities, or simply being a supportive presence, 
@@ -132,7 +137,7 @@ const handleIntersection = (entries, section) => {
             </div>
 
 
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col' ref={col5Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#294B29] text-[white] gap-[20px] rounded-[15px] serve-col' ref={col5Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Palliative Care </p>
        <img src='images/care.png' alt='Palliative Care' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px]'>
@@ -142,9 +147,9 @@ const handleIntersection = (entries, section) => {
 
       </p>
             </div>
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#7FC7D9] gap-[20px] rounded-[15px] serve-col' ref={col6Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#294B29] text-white gap-[20px] rounded-[15px] serve-col' ref={col6Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Respite Care </p>
-       <img src='images/respite-care.png' alt='Respite Care' className= 'w-[65px] h-[65px]'/> 
+       <img src='images/respite.png' alt='Respite Care' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px]'>
       Respite care acknowledges the vital role of primary caregivers, offering them temporary relief. 
       Caregivers, often family members, can take a break while ensuring their loved ones continue to receive necessary care.
@@ -156,7 +161,7 @@ const handleIntersection = (entries, section) => {
         </div>
     </div>
 
-        <div className='p-[25px] bg-[#7FC7D9] rounded-[15px] flex justify-center w-[90vw] m-[auto] text-[20px] font-[600] text-[white] '  ref={summaryRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+        <div className='p-[25px] bg-[#294B29] rounded-[15px] flex justify-center w-[90vw] m-[auto] text-[20px] font-[600] text-[white] '  ref={summaryRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
         In summary, these services collectively underscore a commitment to individualized care, prioritizing dignity, independence, and holistic well-being. 
          Whether addressing basic daily tasks or providing emotional support during challenging times,businesses offering these services contribute
          significantly to the overall health and quality of life for those they serve.

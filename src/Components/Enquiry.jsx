@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Footer from './Footer'
 import { collection, addDoc, Timestamp } from "firebase/firestore"; 
 import {db} from '../util/firebase'
@@ -9,6 +9,12 @@ import {v4 as uuid}  from 'uuid'
 
 
 export default function Enquiry() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
 
 
      const [firstName, setFirstName] = useState('')
@@ -74,7 +80,7 @@ try{
 
 
   return (
-    <div className='w-[100vw]  bg-[#7FC7D9]'>
+    <div className='w-[100vw]  mission'>
      <div className='w-[90vw] p-[25px] m-[auto] flex flex-col items-center justify-center'> 
              <h1 className='text-[45px] font-[800] text-[white] mb-[25px]'>
                 Make an Enquiry

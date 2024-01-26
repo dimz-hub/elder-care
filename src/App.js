@@ -10,6 +10,7 @@ import ServicePage from './Components/ServicePage';
 import ContactPage from './Components/ContactPage'
 import PrivateRoute from './Components/PrivateRoute';
 import { useAuthContext } from './util/AuthContext';
+import ScrollToTop from './Components/ScrollToTop';
 
 
 function App() {
@@ -61,9 +62,12 @@ const handleIntersection = (entries, section) => {
 
     <div>
     <Routes>
+
+
+
   <Route path='/' element = {<LandingPage />} />
  <Route path='/enquiry' element = {<Enquiry/>} />
- <Route path='/signup' element = {<Signup/>} />
+ {/* <Route path='/signup' element = {<Signup/>} /> */}
  <Route path='/signin' element = {<Signin/>} />
  <Route path='/admin' element = {<Admin/>} />
  <Route path='/services' element = {<ServicePage/>} />

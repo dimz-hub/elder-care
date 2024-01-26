@@ -42,7 +42,7 @@ code {
 
 
 .hero{
-  background: url('../public/images/elderwoman.jpg') center/cover no-repeat;
+  background: url('../public/images/nurse4.jpg') center/cover no-repeat;
   height: 100vh;
   width: 100vw;
   position:relative
@@ -51,7 +51,8 @@ code {
 .hero-container{
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+   background: rgba(0,0,0,0.4); 
+  /* background: rgba(80, 98, 58,0.4); */
   position: absolute;
   top: 0;
   left: 0; 
@@ -68,7 +69,8 @@ code {
 .about-container{
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  /* background: rgba(0,0,0,0.4); */
+  background: rgba(80, 98, 58,0.4);
   position: absolute;
   top: 0;
   left: 0; 
@@ -76,7 +78,7 @@ code {
   
 }
 .service-page{
-  background: url('../public/images/modern1.jpg') center/cover no-repeat;
+  background: url('../public/images/modern5.jpg') center/cover no-repeat;
   height: 100vh;
   width: 100vw;
   position:relative
@@ -85,7 +87,8 @@ code {
 .service-page-container{
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  /* background: rgba(0,0,0,0.4); */
+  background: rgba(80, 98, 58,0.4);
   position: absolute;
   top: 0;
   left: 0; 
@@ -97,7 +100,7 @@ code {
   height: 100vh;
   width: 100vw;
   position:relative;
-  background:  rgba(136, 196, 252, 0.8);  ;
+  background:  rgba(141, 168, 109, 0.7);  ;
   margin-top: 100px;
 }
 
@@ -180,7 +183,8 @@ animation: fadeIn 3s ease-out 0.5s forwards;
 
 
 .mission{
-   background-color: rgba(136, 196, 252, 0.1); 
+    background-color: #789461;  
+   /* background-color: #DBE7C9;  */
 
 }
 
@@ -209,7 +213,8 @@ animation: fadeIn 3s ease-out 0.5s forwards;
 .client-review-container{
   width: 100%;
   height: 100%;
-  background: rgba(220, 242, 241, 0.4);
+  /* background: rgba(220, 242, 241, 0.4); */
+  background: rgba(80, 98, 58,0.7);
   position: absolute;
   top: 0;
   left: 0; 
