@@ -4,6 +4,7 @@ import { collection, addDoc, Timestamp } from "firebase/firestore";
 import {db} from '../util/firebase'
 // import { doc, updateDoc, arrayUnion, Timestamp, serverTimestamp, onSnapshot} from "firebase/firestore";
 import {v4 as uuid}  from 'uuid'
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -14,6 +15,8 @@ export default function Enquiry() {
     window.scrollTo(0, 0);
   }, []);
 
+
+  const navigate = useNavigate()
 
 
 
@@ -68,6 +71,10 @@ try{
           clearInterval( setInterval(setIsSubmit(true), 1000))
           setIsSubmit(false)
         },3000)
+
+        setTimeout(() => {
+          navigate('/')
+        },4000)
       }catch(err){
         // console.log(err.message)
       }

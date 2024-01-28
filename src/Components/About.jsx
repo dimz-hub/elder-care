@@ -78,10 +78,10 @@ const handleIntersection = (entries, section) => {
     </div>
 
     <div className= 'section  w-[90vw] m-[auto] p-[25px] flex items-center about-section mt-[100px] xs:flex-col xs:w-[100vw] xs:text-center'  >
-      <div  ref={storyRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}  className='xs:w-[90vw] xs:text-center  xs:flex xs:flex-col  xs:justify-center xs:m-[auto]  '>
+      <div  ref={storyRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}  className=' flex items-center gap-[15px] w-[90vw] m-[auto]  xs:w-[90vw] xs:text-center  xs:flex xs:flex-col  xs:justify-center xs:m-[auto]  '>
 
-      <div className='section '>
-        <h1 className='text-[42px] text-center text-[#50623A] font-[500] mb-[40px] xs:text-[30px] xs:w-[100%]' >Transforming assisted living for disabilities and challenging behaviour</h1>
+      <div className='section w-[45vw]'>
+        <h1 className='text-[42px] text-center text-[#50623A] font-[500] mb-[40px] xs:text-[30px] xs:w-[100%] ' >Transforming assisted living for disabilities and challenging behaviour</h1>
         <p className='text-[26px] text-justify xs:text-[18px]'>
         Sade and Tiffany both have powerful stories of parents and grandparents who have suffered disabilities as adults. Sade's mother found herself disabled in later life and struggling to live independently, 
         and Tiffany’s grandfather and brother had mental health issues in middle age which left them unable to support themselves.
@@ -93,7 +93,7 @@ const handleIntersection = (entries, section) => {
 
       </div>
 
-      <div >
+      <div className='w-[40vw]' >
         <img src='images/elderwoman.jpg' alt='transforming assited living' className='rounded-[20px] mt-[150px] xs:w-[400px] xs:h-[300px] xs:mt-[50px]' />
       </div>
       </div>

@@ -93,7 +93,7 @@ const handleIntersection = (entries, section) => {
             <div className='flex flex-col items-center justify-center p-2 h-[60vh] text-[white] bg-[#294B29] gap-[20px] rounded-[15px] serve-col xs:w-[340px] xs:h-[67vh]' ref={col1Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Domiciliary Care </p>
        <img src='images/dom.png' alt='domiciliary care' className= 'w-[65px] h-[65px]'/> 
-      <p className='text-[15px] font-[600] text-center w-[400px xs:w-[90%]'>
+      <p className='text-[15px] font-[600] text-center w-[400px] xs:w-[90%]'>
       Domiciliary care is a cornerstone service that provides personalized support within the comfort of an individual's home. 
       It encompasses assistance with daily tasks, ranging from personal hygiene to medication management. By prioritizing 
       independence and familiarity, domiciliary care promotes a sense of security and well-being for clients.
