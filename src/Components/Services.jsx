@@ -51,7 +51,7 @@ const handleIntersection = (entries, section) => {
 
     <h1 className = 'text-[white] text-[40px] font-[600] mb-[50px] xs:text-[38px]'  ref={servicesRef1} style={{  transition: 'opacity 1s ease', opacity: 0 }}  >Our Services</h1>
     
-    <div className='flex items-center justify-center gap-[20px] mb-[40px] flex-wrap ' >
+    <div className='flex items-center justify-center gap-[20px] mb-[40px] flex-wrap' >
     <div className='w-[300px] h-[250px] bg-[#DBE7C9] rounded-[20px] flex flex-col items-center justify-center pt-[20px] p-[10px] gap-[20px] service-col'  ref={servicesRef2} style={{  transition: 'opacity 1s ease', opacity: 0 }} >
       <p className = 'font-[700] text-[25px] text-center'>Domiciliary Care</p>
        <img src='images/medical.png' alt='domiciliary care' className= 'w-[65px] h-[65px]'/> 

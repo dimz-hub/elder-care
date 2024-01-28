@@ -33,16 +33,16 @@ export default function ServicePage() {
 
 
   const topRef = useIntersectionObserver((entries) => handleIntersection(entries, 'top'), { threshold: 0.5 });
-  const servicesRef = useIntersectionObserver((entries) => handleIntersection(entries, 'services'), { threshold: 0.5 });
-  const summaryRef = useIntersectionObserver((entries) => handleIntersection(entries, 'summary'), { threshold: 0.5 });
-  const clientRef = useIntersectionObserver((entries) => handleIntersection(entries, 'client'), { threshold: 0.5 });
-  const serveRef = useIntersectionObserver((entries) => handleIntersection(entries, 'serve'), { threshold: 0.5 });
-  const col1Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col1'), { threshold: 0.5 });
-  const col2Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col2'), { threshold: 0.5 });
-  const col3Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col3'), { threshold: 0.5 });
-  const col4Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col4'), { threshold: 0.5 });
-  const col5Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col5'), { threshold: 0.5 });
-  const col6Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col6'), { threshold: 0.5 });
+  const servicesRef = useIntersectionObserver((entries) => handleIntersection(entries, 'services'), { threshold: 0.2 });
+  const summaryRef = useIntersectionObserver((entries) => handleIntersection(entries, 'summary'), { threshold: 0.2 });
+  const clientRef = useIntersectionObserver((entries) => handleIntersection(entries, 'client'), { threshold: 0.2 });
+  const serveRef = useIntersectionObserver((entries) => handleIntersection(entries, 'serve'), { threshold: 0.2 });
+  const col1Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col1'), { threshold: 0.2 });
+  const col2Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col2'), { threshold: 0.2 });
+  const col3Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col3'), { threshold: 0.2 });
+  const col4Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col4'), { threshold: 0.2 });
+  const col5Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col5'), { threshold: 0.2 });
+  const col6Ref = useIntersectionObserver((entries) => handleIntersection(entries, 'col6'), { threshold: 0.2 });
 
 
 const handleIntersection = (entries, section) => {
@@ -69,7 +69,7 @@ const handleIntersection = (entries, section) => {
         <Navbar  />
         </div>
 
-        <div className= 'h-[70vh] w-[80vw] m-[auto] flex items-center justify-center text-[white] text-[80px] text-center font-[500] xs:text-[40px]'  >
+        <div className= 'h-[70vh] w-[80vw] m-[auto] flex items-center justify-center text-[white] text-[80px] text-center font-[500] xs:text-[40px] md:text-[50px] lg:text-[60px]'  >
         Get assisted living for disabilities and <br/> challenging behaviour
         </div>
 
@@ -83,14 +83,14 @@ const handleIntersection = (entries, section) => {
             Our services
         </h1>
 
-        <div className='w-[90vw] flex justify-center text-[30px]  mt-[50px] text-center  mb-[50px] xs:text-[18px] xs:text-justify '  ref={serveRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+        <div className='w-[90vw] flex justify-center text-[30px]  mt-[50px] text-center  mb-[50px] xs:text-[18px] xs:text-justify md:text-justify md:m-[auto] md:w-[85vw] md:mb-[60px] md:text-[22px] lg:text-[26px]'  ref={serveRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
         Domiciliary care, supported living, live-in care, companionship, palliative care, and respite care from
       a comprehensive suite of services designed to meet the diverse needs of individuals within the healthcare and support sector.
 
         </div>
         <div className='flex items-center justify-center gap-[50px] mb-[40px] flex-wrap'  >
 
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh] text-[white] bg-[#294B29] gap-[20px] rounded-[15px] serve-col xs:w-[340px] xs:h-[67vh]' ref={col1Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh] text-[white] bg-[#294B29] gap-[20px] rounded-[15px] serve-col xs:w-[340px] xs:h-[73vh]' ref={col1Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Domiciliary Care </p>
        <img src='images/dom.png' alt='domiciliary care' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px] xs:w-[90%]'>
@@ -100,7 +100,7 @@ const handleIntersection = (entries, section) => {
 
       </p>
             </div>
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#294B29] text-[white] gap-[20px] rounded-[15px] serve-col xs:w-[340px] xs:h-[67vh]' ref={col2Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#294B29] text-[white] gap-[20px] rounded-[15px] serve-col xs:w-[340px] xs:h-[73vh]' ref={col2Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Supported Living </p>
        <img src='images/dom-care.png' alt='supported living' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px] xs:w-[90%]'>
@@ -110,7 +110,7 @@ const handleIntersection = (entries, section) => {
 
       </p>
             </div>
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#294B29] text-[white] gap-[20px] rounded-[15px] serve-col xs:w-[340px]  xs:h-[67vh]' ref={col3Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh] bg-[#294B29] text-[white] gap-[20px] rounded-[15px] serve-col xs:w-[340px]  xs:h-[73vh]' ref={col3Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Live-in Care </p>
        <img src='images/home.png' alt='Live-in Care' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px] xs:w-[90%]'>
@@ -123,7 +123,7 @@ const handleIntersection = (entries, section) => {
             </div>
       
 
-        <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#294B29] text-[white] gap-[20px] rounded-[15px] serve-col xs:w-[340px]  xs:h-[67vh]' ref={col4Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+        <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#294B29] text-[white] gap-[20px] rounded-[15px] serve-col xs:w-[340px]  xs:h-[73vh]' ref={col4Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Companionship </p>
        <img src='images/friends.png' alt='Companionship' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px] xs:w-[90%]'>
@@ -137,7 +137,7 @@ const handleIntersection = (entries, section) => {
             </div>
 
 
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#294B29] text-[white] gap-[20px] rounded-[15px] serve-col xs:w-[340px]  xs:h-[67vh]' ref={col5Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#294B29] text-[white] gap-[20px] rounded-[15px] serve-col xs:w-[340px]  xs:h-[73vh]' ref={col5Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Palliative Care </p>
        <img src='images/care.png' alt='Palliative Care' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px] xs:w-[90%]'>
@@ -147,7 +147,7 @@ const handleIntersection = (entries, section) => {
 
       </p>
             </div>
-            <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#294B29] text-white gap-[20px] rounded-[15px] serve-col xs:w-[340px]  xs:h-[67vh]' ref={col6Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+            <div className='flex flex-col items-center justify-center p-2 h-[60vh]  bg-[#294B29] text-white gap-[20px] rounded-[15px] serve-col xs:w-[340px]  xs:h-[73vh]' ref={col6Ref} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             <p className = 'font-[700] text-[25px] text-[white]'>Respite Care </p>
        <img src='images/respite.png' alt='Respite Care' className= 'w-[65px] h-[65px]'/> 
       <p className='text-[15px] font-[600] text-center w-[400px]  xs:w-[90%] xs:text-[13px]'>
@@ -173,11 +173,11 @@ const handleIntersection = (entries, section) => {
 
 <div className='serve h-[100vh] w-[100vw] flex items-center justify-center xs:h-[60vh]'  ref={clientRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
   <div className='serve-container text-[white] '>
-  <p className='text-[45px]  xs:text-[20px] '>
+  <p className='text-[45px]  xs:text-[20px] lg:text-[25px] '>
   “I underestimated how hard it was to find support for my adult son who has challenging behaviour, 
    but getting advice from Birch gave me great confidence.”
   </p>
-  <p className='text-[38px] font-[100]'>
+  <p className='text-[38px] font-[100] xs:text-[22px] md:text-[32px]'>
   — LUCY R., BIRCH ADVICE  CLIENT
   </p>
  

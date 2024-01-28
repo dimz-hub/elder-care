@@ -47,7 +47,7 @@ useEffect(() => {
   return (
    
 
-    <div  className={` flex items-center justify-between m-[auto] p-[25px]  xs:p-[5px] xs:block ${scrolled ?  'w-[100vw] m-[0px] navbar-black  text-[white]' : ' text-[white] w-[100vw] m-[auto]'  }`}>
+    <div  className={` flex items-center justify-between m-[auto] p-[25px]  xs:p-[5px] xs:block  lg:flex lg:justify-between lg:items-center  ${scrolled ?  'w-[100vw] m-[0px] navbar-black  text-[white] lg:text-[18px] lg:p-[0px] lg:pl-[5px]' : ' text-[white] w-[100vw] m-[auto]'  }`}>
   <div className = 'text-[45px] font-[500] cursor-default xs:flex xs:justify-between xs:items-center xs:p-[10px]'> 
   <div>
 
@@ -60,7 +60,7 @@ useEffect(() => {
     <img src='images/toggle.png' alt='toggle' className='xs:w-[40px] w-[50px] hidden xs:block' onClick={showNav} />
   </div>
     </div>
-    <div className = {`${ scrolled? 'navlinks-scrolled mr-[25px]  xs:mr-[0px]' :  'navlinks-fixed'} gap-[15px] font-[400] text-[22px] flex items-center xs:pt-[30px] xs:gap-[10px] xs:gap-[30px] xs:flex-col xs:z-30  xs:w-[100vw] xs:h-[88vh] xs:items-center xs:absolute xs:right-0 xs:overflow-hidden ${toggle?'xs:flex xs:bg-[#789461] xs:transition xs:duration-500 xs:ease-in-out' : 'xs:h-[0px] xs:hidden transition xs:duration-500 xs:ease-out' }`}>
+    <div className = {`${ scrolled? 'navlinks-scrolled mr-[25px]  xs:mr-[0px]' :  'navlinks-fixed'} gap-[15px] font-[400] text-[22px] flex items-center xs:pt-[30px] xs:gap-[10px] xs:gap-[30px] xs:flex-col xs:z-30  xs:w-[100vw] xs:h-[88vh] xs:items-center xs:absolute xs:right-0 xs:overflow-hidden  lg:text-[18px]  ${toggle?'xs:flex xs:bg-[#789461] xs:transition xs:duration-500 xs:ease-in-out' : 'xs:h-[0px] xs:hidden transition xs:duration-500 xs:ease-out' }`}>
     <Link to={'/'}>
   <span className='xs:p-[50px]' >Home</span>
     </Link>

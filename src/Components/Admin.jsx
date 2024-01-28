@@ -83,7 +83,7 @@ async function handleSignOut(){
 }
 
   return (
-    <div className='w-[100vw]  mission'>
+    <div className='w-[100vw]   min-h-[100vh]  mission'>
         <div className='w-[80vw] m-[auto]'>
             
             <h1 className='w-[80vw] flex items-center justify-center  font-[600] text-[45px] mb-[30px]'>ADMIN</h1>

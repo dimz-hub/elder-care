@@ -44,14 +44,14 @@ export default function LandingPage() {
    };
 
 
-   const topRef = useIntersectionObserver((entries) => handleIntersection(entries, 'top'), { threshold: 0.5 });
-   const missionRef = useIntersectionObserver((entries) => handleIntersection(entries, 'mission'), { threshold: 0.5 });
-   const saveRef = useIntersectionObserver((entries) => handleIntersection(entries, 'save'), { threshold: 0.5 });
-   const homeRef = useIntersectionObserver((entries) => handleIntersection(entries, 'home'), { threshold: 0.5 });
-   const servicesRef = useIntersectionObserver((entries) => handleIntersection(entries, 'services'), { threshold: 0.5 });
-   const clientRef = useIntersectionObserver((entries) => handleIntersection(entries, 'client'), { threshold: 0.5 });
-   const teamRef = useIntersectionObserver((entries) => handleIntersection(entries, 'team'), { threshold: 0.5 });
-   const contactRef = useIntersectionObserver((entries) => handleIntersection(entries, 'contact'), { threshold: 0.5 });
+   const topRef = useIntersectionObserver((entries) => handleIntersection(entries, 'top'), { threshold: 0.2 });
+   const missionRef = useIntersectionObserver((entries) => handleIntersection(entries, 'mission'), { threshold: 0.2 });
+   const saveRef = useIntersectionObserver((entries) => handleIntersection(entries, 'save'), { threshold: 0.2 });
+   const homeRef = useIntersectionObserver((entries) => handleIntersection(entries, 'home'), { threshold: 0.2 });
+   const servicesRef = useIntersectionObserver((entries) => handleIntersection(entries, 'services'), { threshold: 0.2 });
+   const clientRef = useIntersectionObserver((entries) => handleIntersection(entries, 'client'), { threshold: 0.2 });
+   const teamRef = useIntersectionObserver((entries) => handleIntersection(entries, 'team'), { threshold: 0.2 });
+   const contactRef = useIntersectionObserver((entries) => handleIntersection(entries, 'contact'), { threshold: 0.2 });
 
  const handleIntersection = (entries, section) => {
      entries.forEach((entry) => {
