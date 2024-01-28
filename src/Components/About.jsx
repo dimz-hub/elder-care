@@ -80,7 +80,7 @@ const handleIntersection = (entries, section) => {
     <div className= 'section  w-[90vw] m-[auto] p-[25px] flex items-center about-section mt-[100px] xs:flex-col xs:w-[100vw] xs:text-center'  >
       <div  ref={storyRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}  className=' flex items-center gap-[15px] w-[90vw] m-[auto]  xs:w-[90vw] xs:text-center  xs:flex xs:flex-col  xs:justify-center xs:m-[auto]  '>
 
-      <div className='section w-[45vw]'>
+      <div className='section w-[45vw]  xs:w-[90vw]'>
         <h1 className='text-[42px] text-center text-[#50623A] font-[500] mb-[40px] xs:text-[30px] xs:w-[100%] ' >Transforming assisted living for disabilities and challenging behaviour</h1>
         <p className='text-[26px] text-justify xs:text-[18px]'>
         Sade and Tiffany both have powerful stories of parents and grandparents who have suffered disabilities as adults. Sade's mother found herself disabled in later life and struggling to live independently, 
@@ -93,7 +93,7 @@ const handleIntersection = (entries, section) => {
 
       </div>
 
-      <div className='w-[40vw]' >
+      <div className='w-[40vw] xs:w-[90vw]' >
         <img src='images/elderwoman.jpg' alt='transforming assited living' className='rounded-[20px] mt-[150px] xs:w-[400px] xs:h-[300px] xs:mt-[50px]' />
       </div>
       </div>
@@ -101,11 +101,11 @@ const handleIntersection = (entries, section) => {
     
 
     </div>
-    <div className='w-[90vw] m-[auto] p-[25px]  mt-[100px] xs:mt-[35px]' >
+    <div className='w-[90vw] m-[auto] p-[25px] xs:p-[0px] xs:pb-[50px]  mt-[100px] xs:mt-[35px]' >
        
        <h1 className='text-[42px] text-center  text-[#50623A] font-[500] mb-[40px]  xs:text-[30px]'>A modern approach</h1>
 
-<div className= 'modern  xs:flex xs:flex-col'  ref={modernRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+<div className= 'modern  xs:flex xs:flex-col xs:w-[90vw] xs:m-[auto] xs:justify-center '  ref={modernRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
 
       <div>
         <img src='images/modern3.jpg' alt='transforming assited living' className='rounded-[20px] ' />
