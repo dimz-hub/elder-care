@@ -16,6 +16,10 @@ import ScrollToTop from './Components/ScrollToTop';
 function App() {
 
 
+  const windowWidth = window.innerWidth
+  console.log('window width:', windowWidth, 'pixels')
+
+
   const {currentUser} = useAuthContext()
  const navigate= useNavigate()
 
