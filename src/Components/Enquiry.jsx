@@ -81,42 +81,42 @@ try{
 
   return (
     <div className='w-[100vw]  mission'>
-     <div className='w-[90vw] p-[25px] m-[auto] flex flex-col items-center justify-center'> 
-             <h1 className='text-[45px] font-[800] text-[white] mb-[25px]'>
+     <div className='w-[90vw] p-[25px] m-[auto] flex flex-col items-center justify-center xs:w-[100vw]'> 
+             <h1 className='text-[45px] font-[800] text-[white] mb-[25px] xs:text-center xs:text-[37px]'>
                 Make an Enquiry
              </h1>
-             <p className='text-center font-[500] text-[25px] mb-[30px]'>
+             <p className='text-center font-[500] text-[25px] mb-[30px] xs:text-[20px] xs:text-[white] '>
             
 Please make us aware of your preferences, and we will reach out to you <br/> via phone or email to discuss your requirements.
              </p>
 
-             <form className='flex flex-col gap-[15px]'  onSubmit={handleSubmit}>
-          <div className='flex flex-col justify-center' >
-          <label for="firstname" className='text-[white] text-[22px] font-[400]' >First Name <span className='text-[gray] font-[200] text-[17px]'> (required)  </span>  </label>
-         <input   className='enquiry-input'  type="text" id="firstname" name="firstname" value={firstName} required  onChange={(e) => setFirstName(e.target.value)}/>
+             <form className='flex flex-col gap-[15px]  xs:m-[auto]'  onSubmit={handleSubmit}>
+          <div className='flex flex-col justify-center ' >
+          <label for="firstname" className='text-[white] text-[22px] font-[400]' >First Name <span className=' font-[200] text-[17px]'> (required)  </span>  </label>
+         <input   className='enquiry-input xs:w-[85vw]'  type="text" id="firstname" name="firstname" value={firstName} required  onChange={(e) => setFirstName(e.target.value)}/>
           </div>
           <div className='flex flex-col justify-center' >
-          <label for="lastname" className='text-[white] text-[22px] font-[400]'>Last Name<span className='text-[gray] font-[200] text-[17px]'> (required)  </span> </label>
-         <input  className='enquiry-input' type="text" id="lastname" name="lastname" value={lastName} onChange={(e) => setLastName(e.target.value)} required/>
+          <label for="lastname" className='text-[white] text-[22px] font-[400]'>Last Name<span className=' font-[200] text-[17px]'> (required)  </span> </label>
+         <input  className='enquiry-input xs:w-[85vw]' type="text" id="lastname" name="lastname" value={lastName} onChange={(e) => setLastName(e.target.value)} required/>
           </div>
           <div className='flex flex-col justify-center' >
           <label for="number" className='text-[white] text-[22px] font-[400]'>Phone Number</label>
-         <input  className='enquiry-input' type="text" id="number" name="number" value={number} onChange={(e) => setNumber(e.target.value)}/>
+         <input  className='enquiry-input xs:w-[85vw]' type="text" id="number" name="number" value={number} onChange={(e) => setNumber(e.target.value)}/>
           </div>
           <div className='flex flex-col justify-center' >
-          <label for="email" className='text-[white] text-[22px] font-[400]'> Email Address <span className='text-[gray] font-[200] text-[17px]'> (required)  </span></label>
-         <input  className='enquiry-input' type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+          <label for="email" className='text-[white] text-[22px] font-[400]'> Email Address <span className=' font-[200] text-[17px]'> (required)  </span></label>
+         <input  className='enquiry-input xs:w-[85vw]' type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
           </div>
-          <div className='flex flex-col justify-center' >
+          <div className='flex flex-col justify-center ' >
             <p className='text-[white] text-[22px] font-[400]'>
-                What would you like to enquire about? <span className='text-[gray] font-[200] text-[17px]'> (required)  </span>
+                What would you like to enquire about? <span className=' font-[200] text-[17px]'> (required)  </span>
             </p>
-            <div className='flex items-center gap-[10px] text-[17px] font-[300] ' >
-                <label>
+            <div className='flex items-center gap-[10px] text-[17px] font-[300] xs:mt-[20px] ' >
+                <label className='xs:text-[15px]'>
 
               <input type='radio' name='enquire' required checked={enquiry === 'Care for yourselfor a loved one' } value={'Care for yourselfor a loved one'} onChange={(e) => setEnquiry(e.target.value)} /> Care for yourself or a loved one
                 </label>
-                <label>
+                <label className='xs:text-[15px]'>
 
               <input type='radio' name='enquire'  required   value="A job in care" checked={enquiry === 'A job in care'} onChange={(e) => setEnquiry(e.target.value)}/> A job in care
                 </label>
@@ -124,10 +124,10 @@ Please make us aware of your preferences, and we will reach out to you <br/> via
           </div>
           <div className='flex flex-col justify-center gap-[10px]' >
           <label for="message" className='text-[white] text-[22px] font-[400]'> Message <span className='text-[gray] font-[200] text-[17px]'> (required)  </span></label>
-    <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here" value={message} required className='enquiry-textarea rounded-[5px]' onChange={(e) => setMessage(e.target.value)}></textarea>
+    <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here" value={message} required className='enquiry-textarea rounded-[5px] xs:w-[85vw]' onChange={(e) => setMessage(e.target.value)}></textarea>
 
           </div>
-          <button type='submit' className=' hero-button p-3 outline-none bg-[black] text-[white] ml-[150px] w-[12rem] rounded-[10px] mt-[15px] font-[600] '>
+          <button type='submit' className=' hero-button p-3 outline-none bg-[black] text-[white] ml-[150px] w-[12rem] rounded-[10px] mt-[15px] font-[600] xs:ml-[70px] xs:text-center '>
             Submit Enquiry
           </button>
              </form>

@@ -13,28 +13,4 @@ export default function PrivateRoute({children}) {
      }
 
 
-    // const navigate = useNavigate()
-
-    // if (currentUser == null) {
-    //   setTimeout(() =>{
-
-    //       navigate('/')
-    //   }, 1000)
-    // }
-
-    // return children
-
-    // return (
-    //     <Route
-    //     {...rest}
-    //     render ={props => {
-    //       return currentUser? <Component {...props} /> : <Navigate to={'/'} />
-    //     }}
-    //     >
-
-    //     </Route>
-    // )
-
-
-
 }

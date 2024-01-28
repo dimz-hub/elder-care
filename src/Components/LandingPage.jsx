@@ -67,16 +67,22 @@ export default function LandingPage() {
 
   return (
     <div   >
-        <TopPage topRef={topRef} />
+      <div className='xs:z-10 xs:relative'>
+
+        <TopPage topRef={topRef} className= 'xs:z-30 xs:relative' />
+      </div>
         <Mission missionRef={missionRef}/>
         <Savehaven saveRef={saveRef}/>
         <Stayhome  homeRef={homeRef}/>
         <Services servicesRef={servicesRef} />
-        <Clientreview clientRef={clientRef} />
+        <div className='xs:z-10 xs:relative'> 
+
+        <Clientreview clientRef={clientRef}   />
+        </div>
         <Team  teamRef={teamRef}/>
          <Contact  contactRef={contactRef}/>  
          <Footer />
-        
+         
     </div>
   )
 }

@@ -88,7 +88,7 @@ async function handleSignOut(){
             
             <h1 className='w-[80vw] flex items-center justify-center  font-[600] text-[45px] mb-[30px]'>ADMIN</h1>
           <div className='flex items-center justify-between'> 
-            <h1 className ='font-[500] text-[40px]'>
+            <h1 className ='font-[500] text-[40px] xs:text-[20px]'>
                
                 Welcome {currentUser.displayName}
                 </h1>
@@ -98,7 +98,7 @@ async function handleSignOut(){
           </div>
 
           <div>
-            <h3 className='font-[500]  text-[40px] flex w-[80vw] items-center justify-center mt-[40px] underline'>
+            <h3 className='font-[500]  text-[40px] flex w-[80vw] items-center justify-center mt-[40px] underline xs:text-[22px]'>
                  Enquiries
             </h3>
             <div>
@@ -106,7 +106,7 @@ async function handleSignOut(){
             enquires.map((doc) => {
             return(
             
-            <div key= {doc?.id} className='text-[30px] p-3 border-b border-gray-300'>
+            <div key= {doc?.id} className='text-[30px] p-3 border-b border-gray-300 xs:text-[19px]'>
 
 <p>Name: {doc.firstName} {doc.lastName}</p>
 <p>Email: {doc.email}</p>

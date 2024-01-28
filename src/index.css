@@ -150,7 +150,7 @@ background: rgba(0,0,0,0.4);
   border: 1px solid white;
 }
 
-.hero-body p {
+/* .hero-body p {
 opacity: 0;
 animation: fadeIn 3s ease-out 0.5s forwards;
 } 
@@ -166,7 +166,7 @@ animation: fadeIn 3s ease-out 0.5s forwards;
   to{
     opacity: 1;
   }
-}
+} */
 .overlay{
   height: 100%;
   width: 100%;
@@ -218,7 +218,7 @@ animation: fadeIn 3s ease-out 0.5s forwards;
   position: absolute;
   top: 0;
   left: 0; 
-
+  /* z-index:-1; */
   
 }
 
@@ -266,6 +266,10 @@ animation: fadeIn 3s ease-out 0.5s forwards;
 }
 
 
+.showlink{
+  transition: 0.5s ease-in;
+}
+
 /* .animatedElement {
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -274,3 +278,17 @@ animation: fadeIn 3s ease-out 0.5s forwards;
 .fadeInAnimation {
   opacity: 1 !important; /* Use !important to override conflicting styles */
 /* }  */
+
+
+@media screen and (max-width:800px) {
+  .hero{
+    background-image: url(../public/images/nurse4.jpg);
+    background-position: 34%;
+  }
+   /* .showlink{
+    height: 70vh;
+   }
+   .hidelink{
+    height: 0px;
+   } */
+}
