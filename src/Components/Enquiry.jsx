@@ -136,7 +136,7 @@ Please make us aware of your preferences, and we will reach out to you <br/> via
           </div>
       
       
-<div className ='xs:w-[40vw] xs:m-[auto]'>
+<div className ='xs:w-[50vw] xs:m-[auto]'>
           <button type='submit' className=' hero-button p-3 outline-none bg-[black] text-[white] ml-[150px] w-[12rem] rounded-[10px] mt-[15px] font-[600] xs: xs:text-center xs:ml-[0px] '>
             Submit Enquiry
           </button> 
