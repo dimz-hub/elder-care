@@ -97,7 +97,7 @@ try{
 Please make us aware of your preferences, and we will reach out to you <br/> via phone or email to discuss your requirements.
              </p>
 
-             <form className='flex flex-col gap-[15px]  xs:m-[auto]'  onSubmit={handleSubmit}>
+             <form className='flex flex-col gap-[15px]  xs:m-[auto] '  onSubmit={handleSubmit}>
           <div className='flex flex-col justify-center ' >
           <label for="firstname" className='text-[white] text-[22px] font-[400]' >First Name <span className=' font-[200] text-[17px]'> (required)  </span>  </label>
          <input   className='enquiry-input xs:w-[85vw]'  type="text" id="firstname" name="firstname" value={firstName} required  onChange={(e) => setFirstName(e.target.value)}/>
@@ -134,9 +134,12 @@ Please make us aware of your preferences, and we will reach out to you <br/> via
     <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here" value={message} required className='enquiry-textarea rounded-[5px] xs:w-[85vw]' onChange={(e) => setMessage(e.target.value)}></textarea>
 
           </div>
-          <button type='submit' className=' hero-button p-3 outline-none bg-[black] text-[white] ml-[150px] w-[12rem] rounded-[10px] mt-[15px] font-[600] xs:ml-[70px] xs:text-center '>
+          <div className='xs:ml-[-40px]'>
+
+          <button type='submit' className=' hero-button p-3 outline-none bg-[black] text-[white] ml-[150px] w-[12rem] rounded-[10px] mt-[15px] font-[600] xs: xs:text-center '>
             Submit Enquiry
           </button>
+          </div>
              </form>
              {
                isSubmit && <div className='text-[25px] font-[600] text-[white] ' >
