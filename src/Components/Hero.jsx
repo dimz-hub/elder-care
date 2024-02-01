@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Hero({topRef}) {
   return (
-    <div className= ' hero-body w-[90vw] m-[auto] p-[25px] mt-[60px] h-[50vh] xs:w-[100%] xs:h-[100vh] xs:items-center xs:flex  xs:justify-center xs:mt-[0px]' >
+    <div className= ' hero-body w-[90vw] m-[auto] p-[25px] mt-[60px] h-[50vh] xs:w-[100%] xs:h-[100vh] xs:items-center xs:flex  xs:justify-center xs:mt-[0px] xs:pt-[40px]' >
       <div className='w-[45vw] xs:w-[100%] xs:flex xs:flex-col xs:justify-center lg:w-[85vw] lg:m-[auto] lg:mt-[30px]' ref={topRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}> 
       
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Savehaven({saveRef}) {
   return (
-    <div className='mission w-[100vw] h-[100vh] xs:h-[auto]  md:h-[auto]'>
+    <div className='w-[100vw] h-[100vh] xs:h-[auto]  md:h-[auto]'>
 
     <div className='w-[90vw] p-[25px] m-[auto] pt-[80px] safehaven xs:mt-[-40px]' ref={saveRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }} >
      <div className= 'flex  justify-between gap-[20px] xs:flex-col-reverse md:flex-col-reverse  md:gap-[40px]'>
@@ -10,7 +10,7 @@ export default function Savehaven({saveRef}) {
         <div className='md:w-[85vw]  md:h-[auto]  md:flex md:justify-center xs:m-[auto] xs:w-[100%]  md:mt-[-120px]'>
             
 
-        <img src='images/old1.jpg' alt='safe haven'  className = ' image w-[40vw] h-[76vh] section-image  rounded-[20px]  hover:w-[43vw] hover:h-[78vh] mt-[60px] object-cover xs:w-[400px] xs:h-[300px] xs:hover:w-[400px] xs:hover:h-[300px] xs:mt-[10px]  md:w-[500px] md:h-[400px]  md:hover:w-[500px] md:hover:h-[400px]  ' />
+        <img src='images/old1.jpg' alt='safe haven'  className = ' image w-[40vw] h-[76vh] section-image  rounded-[20px]   mt-[60px] object-cover xs:w-[400px] xs:h-[300px]  xs:mt-[10px]  md:w-[500px] md:h-[400px]   ' />
      
             </div>
             <div className='w-[49%] h-[70vh] mt-[30px] text-center xs:w-[100%] xs:h-[auto]  md:w-[100%]'>

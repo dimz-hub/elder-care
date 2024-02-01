@@ -10,7 +10,7 @@ export default function Mission({missionRef}) {
     // },[])
 
   return (
-    <div className='mission w-[100vw] [h-100vh]'>
+    <div className=' w-[100vw] [h-100vh]'>
 
     <div className='w-[90vw] p-[25px] m-[auto] pt-[80px] mt-[-120px] ' ref={missionRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }} >
      <div className= ' flex justify-between items-center gap-[50px]  xs:flex-col xs:gap-[20px] xs:justify-center  md:flex-col md:justify-center md:gap-[-40px] '>
@@ -30,7 +30,7 @@ export default function Mission({missionRef}) {
         <div className='md:mt-[-35px] mt-[200px] xs:mt-[130px] '>
             
 
-        <img src='images/elder-sunset.jpg' alt='elder watching sunset'  className = ' image w-[35vw] h-[73vh] object-cover section-image rounded-[20px]  hover:w-[37vw] hover:h-[75vh] mt-[]  xs:w-[400px] xs:h-[300px] xs:hover:w-[400px] xs:hover:h-[300px]     md:w-[500px] md:h-[400px] md:hover:w-[500px] md:hover:h-[400px] '/>
+        <img src='images/elder-sunset.jpg' alt='elder watching sunset'  className = ' image w-[35vw] h-[73vh] object-cover section-image rounded-[20px]   xs:w-[400px] xs:h-[300px]      md:w-[500px] md:h-[400px]  '/>
      
             </div>
      

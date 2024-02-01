@@ -34,16 +34,16 @@ export default function Signin() {
   
   
     return (
-      <div className=' h-[100vh] w-[100vw]  flex items-center justify-center'>
+      <div className='mission h-[100vh] w-[100vw]  flex items-center justify-center'>
   
-      <div className='signup flex flex-col items-center rounded-[20px] h-[70vh] w-[50%] bg-[#294B29] pt-[40px] gap-[px] xs:w-[100%] xs:h-[100%] xs:rounded-none  xs:pt-[75px] md:w-[70%] '>
+      <div className='signup flex flex-col items-center rounded-[20px] h-[70vh] bg-[#294B29] w-[50%] pt-[40px] gap-[px] xs:w-[100%] xs:h-[100%] xs:rounded-none  xs:pt-[75px] md:w-[70%] '>
         
          <h1 className='mb-[10px] font-bold text-2xl text-[white]'>
           BIRCH CARE
          </h1>
   
          <h2 className='font-[500] text-xl xs:mb-[40px] text-[white]'>SignIn</h2>
-         <p className='text-[white] font-[500] text-[22px]'>For admin use only </p>
+         <p className=' font-[500] text-[22px] text-[white]'>For admin use only </p>
          <form onSubmit={ (e) =>handleSubmit(e)}  className='flex flex-col items-center justify-center gap-[30px] mt-[10px] '>
           <span className = ' xs:mb-[20px]'>
           <input type='email' id='email' className=' signup-input rounded-[10px] text-[black]  h-[40px] w-[300px]' placeholder='email' onChange={(e) => setEmail(e.target.value)}  required/>

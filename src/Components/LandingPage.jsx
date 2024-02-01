@@ -66,7 +66,7 @@ export default function LandingPage() {
 
 
   return (
-    <div   >
+    <div className='mission'   >
       <div className='xs:z-10 xs:relative'>
 
         <TopPage topRef={topRef} className= 'xs:z-30 xs:relative' />
