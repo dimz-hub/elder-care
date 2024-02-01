@@ -15,11 +15,11 @@ export default function Contact({contactRef}) {
 
   return (
     <div className='w-[100vw] h-[100vh] mission flex items-center justify-center  xs:min-h-[100vh] xs:h-[auto] md:h-[auto] md:pb-[30px] lg:h-[auto] lg:pb-[30px]' >
-        <div className='w-[90vw] text-[white] m-[auto] xs:w-[100vw]   ' ref={contactRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+        <div className='w-[90vw] text-[] m-[auto] xs:w-[100vw]   ' ref={contactRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
           <div className='flex items-center justify-center gap-[50px] xs:flex-col  md:flex-col lg:flex-col'>
 
             <div className='xs:text-center xs:flex xs:flex-col xs:justify-center xs:items-center '>
-          <h3 className='font-[600] text-[50px] xs:text-[30px] xs:mb-[30px]'>Get in touch with us</h3>
+          <h3 className='font-[600] text-[50px] xs:text-[30px] xs:mb-[30px] text-[#4F6F52]'>Get in touch with us</h3>
           <div className='xs:flex xs:flex-col xs:gap-[10px] xs:pl-[15px]'>
             <div className='flex gap-[20px] items-center xs:text-center xs:w-[100vw]  xs:gap-[10px] xs:items-center '>
                 <div className='font-[500] text-[40px]  xs:text-[18px]' >Numbers:</div>

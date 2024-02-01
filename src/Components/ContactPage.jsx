@@ -1,9 +1,11 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import Navbar from './Navbar'
 import Contact from './Contact'
 import Footer from './Footer'
 
 export default function ContactPage() {
+
+  const [color, setColor] = useState(true)
 
 
 
@@ -50,9 +52,9 @@ const handleIntersection = (entries, section) => {
   return (
     <div>
 <div className='mission'>
-<Navbar/>
+<Navbar color={color}/> 
 </div>
-<Contact contactRef={ contactRef}/>
+<Contact contactRef={ contactRef}  color={color}/>
 <Footer/>
 
 

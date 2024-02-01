@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
 
-export default function Navbar() {
+export default function Navbar({color}) {
 
 const [scrolled, setScrolled] = useState(false)
 const [toggle, setToggle] = useState(false)
@@ -47,7 +47,7 @@ useEffect(() => {
   return (
    
 
-    <div  className={` flex items-center justify-between m-[auto] p-[25px]  xs:p-[5px] xs:block  lg:flex lg:justify-between lg:items-center  ${scrolled ?  'w-[100vw] m-[0px] navbar-black  text-[white] lg:text-[18px] lg:p-[0px] lg:pl-[5px]' : ' text-[white] w-[100vw] m-[auto]'  }`}>
+    <div  className={` flex items-center justify-between m-[auto] p-[25px]  xs:p-[5px] xs:block  lg:flex lg:justify-between lg:items-center  ${scrolled ?  'w-[100vw] m-[0px] navbar-black  text-[white] lg:text-[18px] lg:p-[0px] lg:pl-[5px]' : ' text-[white] w-[100vw] m-[auto]'  } ${color? 'bg-[#4F6F52] xs:bg-none' : ''} `}>
   <div className = 'text-[45px] font-[500] cursor-default xs:flex xs:justify-between xs:items-center xs:p-[10px]'> 
   <div>
 

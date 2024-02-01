@@ -77,16 +77,16 @@ const handleIntersection = (entries, section) => {
       </div>
     </div>
 
-    <div className= 'section   p-[25px] flex items-center about-section mt-[100px] xs:flex-col xs:w-[90vw] xs:m-[auto] xs:text-center    md:text-center md:h-[auto]  md:mb-[20p]'  >
-      <div  ref={storyRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}  className=' flex items-center gap-[15px] w-[90vw] m-[auto]  xs:w-[100%] xs:m-[auto] xs:text-center  xs:flex xs:flex-col  xs:justify-center xs:m-[auto] md:flex-col md:gap-[0px] md:w-[100%]  md:m-[auto] '>
+    <div className= 'section mission   p-[25px] flex items-center about-section pt-[100px] xs:flex-col xs:w-[90vw] xs:m-[auto] xs:text-center  gap-[20px]  md:text-center md:h-[auto]  md:mb-[20p]'  >
+      <div  ref={storyRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}  className=' flex items-center gap-[35px] w-[90vw] m-[auto]  xs:w-[100%] xs:m-[auto] xs:text-center  xs:flex xs:flex-col  xs:justify-center xs:m-[auto] md:flex-col md:gap-[0px] md:w-[100%]  md:m-[auto] '>
 
       <div className='section w-[45vw]  xs:w-[90vw] md:w-[85vw] md:m-[auto] md:h-[auto]'>
-        <h1 className='text-[42px] text-center text-[#50623A] font-[500] mb-[40px] xs:text-[30px] xs:w-[100%] ' >Transforming assisted living for disabilities and challenging behaviour</h1>
-        <p className='text-[26px] text-justify xs:text-[18px]  lg:text-[18px]'>
+        <h1 className='text-[42px] text-center text-[#4F6F52]  font-[500] mb-[40px] xs:text-[30px] xs:w-[100%] ' >Transforming assisted living for disabilities and challenging behaviour</h1>
+        <p className='text-[26px] text-justify xs:text-[18px] xs:text-left lg:text-[18px]'>
         Sade and Tiffany both have powerful stories of parents and grandparents who have suffered disabilities as adults. Sade's mother found herself disabled in later life and struggling to live independently, 
         and Tiffany’s grandfather and brother had mental health issues in middle age which left them unable to support themselves.
         </p>
-        <p className='text-[26px] text-justify xs:text-[18px] lg:text-[18px]'>
+        <p className='text-[26px] text-justify xs:text-[18px] xs:text-left lg:text-[18px]'>
         Our story starts with Tiffany and Sade, two passionate care professionals with over fifty years of combined experience providing care. 
         We’re on a mission to improve the state of care for adults with challenging behaviour.
         </p>
@@ -101,9 +101,11 @@ const handleIntersection = (entries, section) => {
     
 
     </div>
-    <div className='w-[90vw] m-[auto] p-[25px] xs:p-[0px] xs:pb-[50px]  mt-[100px] xs:mt-[35px]' >
+    <div className='w-[100vw] mission'>
+
+    <div className='w-[90vw] m-[auto] p-[25px] xs:p-[0px] xs:pb-[50px]  pt-[100px] xs:mt-[35px]' >
        
-       <h1 className='text-[42px] text-center  text-[#50623A] font-[500] mb-[40px]  xs:text-[30px]'>A modern approach</h1>
+       <h1 className='text-[42px] text-center  text-[#4F6F52]  font-[500] mb-[40px]  xs:text-[30px]'>A modern approach</h1>
 
 <div className= 'modern  xs:flex xs:flex-col xs:w-[90vw] xs:m-[auto] xs:justify-center  md:flex md:flex-col'  ref={modernRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
 
@@ -111,13 +113,14 @@ const handleIntersection = (entries, section) => {
         <img src='images/modern3.jpg' alt='transforming assited living' className='rounded-[20px] lg:h-[350px] lg:w-[450px]  ' />
       </div>
       <div className='w-[]'>
-        <p className='text-[26px] text-justify xs:text-[18px] lg:text-[18px]'>
+        <p className='text-[26px] text-justify  xs:text-left xs:text-[18px] lg:text-[18px]'>
         A modern platform for assisted living in disabilities and challenging behaviour. The Birch Platform combines world-class care, centralised operations, and 
         best-in-class technology to deliver the highest quality care. This combination of human touch and technology helps us provide modern assisted living.
        
         </p>
 </div>
 
+    </div>
       </div>
 
     

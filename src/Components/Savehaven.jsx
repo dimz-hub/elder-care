@@ -14,10 +14,10 @@ export default function Savehaven({saveRef}) {
      
             </div>
             <div className='w-[49%] h-[70vh] mt-[30px] text-center xs:w-[100%] xs:h-[auto]  md:w-[100%]'>
-            <h1 className='text-[45px] font-[800] text-[white] mb-[25px] xs:text-[38px]'>
+            <h1 className='text-[45px] font-[800] text-[#4F6F52] mb-[25px] xs:text-[38px]'>
                 Providing you with a safe haven 🏡
             </h1>
-            <p className='text-[22px] text-justify text-[white] xs:text-[18px] lg:text-[18px]' >
+            <p className='text-[22px] text-justify xs:text-left xs:text-[18px] lg:text-[18px]' >
             In the journey of aging, finding a place of comfort, security, and care becomes paramount. Quality of life should not
             be limited by disability. You deserve to feel comfortable, connected and secure no matter your disability. Our assisted living provides a beacon of hope and through safe haven 
             for elderly client through thoughtful design, personalized services, and a nurturing environment.

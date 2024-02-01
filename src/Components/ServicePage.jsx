@@ -60,7 +60,7 @@ const handleIntersection = (entries, section) => {
 
 
   return (
-    <div>
+    <div className='mission'>
      
     <div className='service-page h-[100vh] w-[100vw]'>
       <div className='service-page-container' ref={topRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
@@ -76,14 +76,14 @@ const handleIntersection = (entries, section) => {
       </div>
     </div>
    
-   <div className=''>
+   <div className='w-[100vw] '>
 
     <div className='w-[90vw] m-[auto] p-[25px] xs:w-[100vw] ' >
         <h1 className='w-[90vw] flex items-center text-[#294B29]  justify-center font-[600] text-[45px] xs:text-center xs:text-[37px] '  ref={servicesRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
             Our services
         </h1>
 
-        <div className='w-[90vw] flex justify-center text-[30px]  mt-[50px] text-center  mb-[50px] xs:text-[18px] xs:text-justify md:text-justify md:m-[auto] md:w-[85vw] md:mb-[60px] md:text-[22px] lg:text-[26px]'  ref={serveRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
+        <div className='w-[90vw] flex justify-center text-[30px]  mt-[50px] text-center  mb-[50px] xs:text-[18px] xs:text-left md:text-justify md:m-[auto] md:w-[85vw] md:mb-[60px] md:text-[22px] lg:text-[26px]'  ref={serveRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
         Domiciliary care, supported living, live-in care, companionship, palliative care, and respite care from
       a comprehensive suite of services designed to meet the diverse needs of individuals within the healthcare and support sector.
 
@@ -169,7 +169,7 @@ const handleIntersection = (entries, section) => {
 
    </div>
 
-   <div  className='toppage'>
+   <div  className='toppage w-[100vw] h-[auto]'>
 
 <div className='serve h-[100vh] w-[100vw] flex items-center justify-center xs:h-[60vh]'  ref={clientRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
   <div className='serve-container text-[white] '>

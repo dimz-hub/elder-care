@@ -89,7 +89,7 @@ try{
   return (
     <div className='w-[100vw]  mission'>
      <div className='w-[90vw] p-[25px] m-[auto] flex flex-col items-center justify-center xs:w-[100vw]'> 
-             <h1 className='text-[45px] font-[800] text-[white] mb-[25px] xs:text-center xs:text-[37px]'>
+             <h1 className='text-[45px] font-[800] text-[#4F6F52] mb-[25px] xs:text-center xs:text-[37px]'>
                 Make an Enquiry
              </h1>
              <p className='text-center font-[500] text-[25px] mb-[30px] xs:text-[20px] xs:text-[white] '>
@@ -99,23 +99,23 @@ Please make us aware of your preferences, and we will reach out to you <br/> via
 
              <form className='flex flex-col gap-[15px]  xs:m-[auto]  '  onSubmit={handleSubmit}>
           <div className='flex flex-col justify-center ' >
-          <label for="firstname" className='text-[white] text-[22px] font-[400]' >First Name <span className=' font-[200] text-[17px]'> (required)  </span>  </label>
+          <label for="firstname" className='text-[]] text-[22px] font-[400]' >First Name <span className=' font-[200] text-[17px]'> (required)  </span>  </label>
          <input   className='enquiry-input xs:w-[85vw]'  type="text" id="firstname" name="firstname" value={firstName} required  onChange={(e) => setFirstName(e.target.value)}/>
           </div>
           <div className='flex flex-col justify-center' >
-          <label for="lastname" className='text-[white] text-[22px] font-[400]'>Last Name<span className=' font-[200] text-[17px]'> (required)  </span> </label>
+          <label for="lastname" className='text-[] text-[22px] font-[400]'>Last Name<span className=' font-[200] text-[17px]'> (required)  </span> </label>
          <input  className='enquiry-input xs:w-[85vw]' type="text" id="lastname" name="lastname" value={lastName} onChange={(e) => setLastName(e.target.value)} required/>
           </div>
           <div className='flex flex-col justify-center' >
-          <label for="number" className='text-[white] text-[22px] font-[400]'>Phone Number</label>
+          <label for="number" className='text-[] text-[22px] font-[400]'>Phone Number</label>
          <input  className='enquiry-input xs:w-[85vw]' type="text" id="number" name="number" value={number} onChange={(e) => setNumber(e.target.value)}/>
           </div>
           <div className='flex flex-col justify-center' >
-          <label for="email" className='text-[white] text-[22px] font-[400]'> Email Address <span className=' font-[200] text-[17px]'> (required)  </span></label>
+          <label for="email" className='text-[] text-[22px] font-[400]'> Email Address <span className=' font-[200] text-[17px]'> (required)  </span></label>
          <input  className='enquiry-input xs:w-[85vw]' type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
           </div>
           <div className='flex flex-col justify-center ' >
-            <p className='text-[white] text-[22px] font-[400]'>
+            <p className='text-[] text-[22px] font-[400]'>
                 What would you like to enquire about? <span className=' font-[200] text-[17px]'> (required)  </span>
             </p>
             <div className='flex items-center gap-[10px] text-[17px] font-[300] xs:mt-[20px] ' >
@@ -130,7 +130,7 @@ Please make us aware of your preferences, and we will reach out to you <br/> via
             </div>
           </div>
           <div className='flex flex-col justify-center gap-[10px]' >
-          <label for="message" className='text-[white] text-[22px] font-[400]'> Message <span className='text-[gray] font-[200] text-[17px]'> (required)  </span></label>
+          <label for="message" className='text-[] text-[22px] font-[400]'> Message <span className='text-[gray] font-[200] text-[17px]'> (required)  </span></label>
     <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here" value={message} required className='enquiry-textarea rounded-[5px] xs:w-[85vw]' onChange={(e) => setMessage(e.target.value)}></textarea>
 
           </div>
@@ -144,7 +144,7 @@ Please make us aware of your preferences, and we will reach out to you <br/> via
          
              </form>
              {
-               isSubmit && <div className='text-[25px] font-[600] text-[white] ' >
+               isSubmit && <div className='text-[25px] font-[600] text-[] ' >
                  Submitted 😄
                </div>
              }
