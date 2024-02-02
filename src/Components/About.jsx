@@ -62,7 +62,7 @@ const handleIntersection = (entries, section) => {
 
 
   return (
-    <div  className='toppage'>
+    <div  className='toppage mission'>
 
     <div className='about h-[100vh] w-[100vw]'>
       <div className='about-container' ref={topRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
@@ -77,7 +77,7 @@ const handleIntersection = (entries, section) => {
       </div>
     </div>
 
-    <div className= 'section mission   p-[25px] flex items-center about-section pt-[100px] xs:flex-col xs:w-[90vw] xs:m-[auto] xs:text-center  gap-[20px]  md:text-center md:h-[auto]  md:mb-[20p]'  >
+    <div className= 'section  p-[25px] flex items-center about-section pt-[100px] xs:flex-col xs:w-[90vw] xs:m-[auto] xs:text-center  gap-[20px]  md:text-center md:h-[auto]  md:mb-[20p]'  >
       <div  ref={storyRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}  className=' flex items-center gap-[35px] w-[90vw] m-[auto]  xs:w-[100%] xs:m-[auto] xs:text-center  xs:flex xs:flex-col  xs:justify-center xs:m-[auto] md:flex-col md:gap-[0px] md:w-[100%]  md:m-[auto] '>
 
       <div className='section w-[45vw]  xs:w-[90vw] md:w-[85vw] md:m-[auto] md:h-[auto]'>
@@ -101,7 +101,7 @@ const handleIntersection = (entries, section) => {
     
 
     </div>
-    <div className='w-[100vw] mission'>
+    <div className='w-[100vw]'>
 
     <div className='w-[90vw] m-[auto] p-[25px] xs:p-[0px] xs:pb-[50px]  pt-[100px] xs:mt-[35px]' >
        
