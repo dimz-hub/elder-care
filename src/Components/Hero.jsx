@@ -10,7 +10,7 @@ export default function Hero({topRef}) {
       <h2 className='text-[44px] font-[600] text-[white] xs:text-[32px] xs:w-[100%] xs:mt-[20px]  lg:text-[35px] '>
         Welcome to Birch, an assisted living collective where your care is the reason we are here.
       </h2>
-      <p className='text-[white] font-[400] text-[20px] mt-[25px] xs:text-[15px] xs:mt-[15px] '>
+      <p className='text-[white] font-[400] text-[20px] mt-[25px] xs:text-[18px] xs:mt-[15px] '>
         Get accessible and personalised in-person assisted living <br />so you experience life's great moments with loved ones <br /> no matter your disability or challenging behaviour.
       </p>
      
