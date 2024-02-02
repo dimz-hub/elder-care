@@ -92,7 +92,7 @@ try{
              <h1 className='text-[45px] font-[800] text-[#4F6F52] mb-[25px] xs:text-center xs:text-[37px]'>
                 Make an Enquiry
              </h1>
-             <p className='text-center font-[500] text-[25px] mb-[30px] xs:text-[20px] xs:text-[white] '>
+             <p className='text-center font-[500] text-[25px] mb-[30px] xs:text-[20px]  '>
             
 Please make us aware of your preferences, and we will reach out to you <br/> via phone or email to discuss your requirements.
              </p>

@@ -78,7 +78,7 @@ export default function Admin() {
 
 async function handleSignOut(){
    await signOut(auth)
-        navigate('/signin')
+        navigate('/')
       
 }
 

@@ -60,7 +60,7 @@ useEffect(() => {
     <img src='images/toggle.png' alt='toggle' className='xs:w-[40px] w-[50px] hidden xs:block' onClick={showNav} />
   </div>
     </div>
-    <div className = {`${ scrolled? 'navlinks-scrolled mr-[25px]  xs:mr-[0px]' :  'navlinks-fixed'} gap-[15px] font-[400] text-[22px] flex items-center xs:pt-[30px] xs:gap-[10px] xs:gap-[30px] xs:flex-col xs:z-30  xs:w-[100vw] xs:h-[88vh] xs:items-center xs:absolute xs:right-0 xs:overflow-hidden  lg:text-[18px]  ${toggle?'xs:flex xs:bg-[#789461] xs:transition xs:duration-500 xs:ease-in-out' : 'xs:h-[0px] xs:hidden transition xs:duration-500 xs:ease-out' }`}>
+    <div className = {`${ scrolled? 'navlinks-scrolled mr-[25px]  xs:mr-[0px]' :  'navlinks-fixed'} gap-[15px] font-[400] text-[22px] flex items-center xs:pt-[30px] xs:text-[black]  xs:gap-[10px] xs:gap-[30px] xs:flex-col xs:z-30  xs:w-[100vw] xs:h-[88vh] xs:items-center xs:absolute xs:right-0 xs:overflow-hidden  lg:text-[18px]  ${toggle?'xs:flex xs:bg-[#F1EFEF] xs:transition xs:duration-500 xs:ease-in-out' : 'xs:h-[0px] xs:hidden transition xs:duration-500 xs:ease-out' }`}>
     <Link to={'/'}>
   <span className='xs:p-[50px]' >Home</span>
     </Link>
