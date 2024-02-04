@@ -7,11 +7,13 @@ export default function Hero({topRef}) {
       <div className='w-[45vw] xs:w-[100%] xs:flex xs:flex-col xs:justify-center lg:w-[85vw] lg:m-[auto] lg:mt-[30px]' ref={topRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}> 
       
 
-      <h2 className='text-[44px] font-[600] text-[white] xs:text-[32px] xs:w-[100%] xs:mt-[20px]  lg:text-[35px] '>
-        Welcome to Birch, an assisted living collective where your care is the reason we are here.
+      <h2 className='text-[35px] font-[700] text-[white] xs:text-[30px] xs:w-[100%] xs:mt-[20px]  lg:text-[35px] '>
+        Welcome to Birch, a domiciliary and  supported living collective where your care is the reason we are here.
       </h2>
-      <p className='text-[white] font-[400] text-[20px] mt-[25px] xs:text-[15px] xs:mt-[15px] '>
-        Get accessible and personalised in-person assisted living <br />so you experience life's great moments with loved ones <br /> no matter your disability or challenging behaviour.
+      <p className='text-[white] text-[15px] font-[400] text-[20px] mt-[10px] xs:text-[15px] xs:mt-[15px] '>
+        Birch Social Limited is a specialist provider of high quality flexible person-centred support. 
+Through both supported living and domiciliary care services, Birch Social Limited supports 
+service users to live as independently as their abilities allow.
       </p>
      
  <Link to={'/enquiry'} className='xs:w-[90vw] xs:flex xs:justify-center xs:pt-[5px] lg:mt-[25px]'>

@@ -19,15 +19,18 @@ export default function Mission({missionRef}) {
                 Our Mission
             </h1>
             <p className='text-[22px] text-justify xs:text-left xs:text-[18px]  lg:text-[18px]  ' >
-            At Birch, we are committed  to providing compassionate and comprehensive care, ensuring the well-being, dignity, and 
-            comfort of our elderly clients. We are committed to creating a nurturing and supportive environment that fosters a sense of community, 
-            belonging, and purpose.Our dedicated team of caregivers, medical professionals, and support staff is driven by the belief that every
-             individual deserves the highest quality of life in their golden years. We strive to enhance the physical, emotional, and social aspects 
-             of our residents' lives, promoting independence and preserving their unique identities.
+            Birch Social Limited aims to provide adults with complex needs the ability to live a life of their
+own choosing in their own homes. This is achieved by providing essential skills, physical and
+emotional support and a range of services that enable our service users to build their 
+independence safely. Birch Social Limited’s priority is to ensure our services safeguard and promote the health, 
+welfare and quality of life of our service users; whilst also supporting them to reach their full 
+potential. We don’t believe in a one size fits all approach, so our focus is to cater to our 
+service users' individual needs in a manner that respects their preferences whilst upholding 
+their rights and dignity.
 
             </p>
         </div>
-        <div className='md:mt-[-35px] mt-[200px] xs:mt-[130px] '>
+        <div className='md:mt-[-35px] mt-[200px] xs:mt-[185px] '>
             
 
         <img src='images/elder-sunset.jpg' alt='elder watching sunset'  className = ' image w-[35vw] h-[73vh] object-cover section-image rounded-[20px]   xs:w-[400px] xs:h-[300px]      md:w-[500px] md:h-[400px]  '/>
