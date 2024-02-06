@@ -8,7 +8,7 @@ import Clientreview from './Clientreview'
 import Team from './Team'
 import Contact from './Contact'
 import Footer from './Footer'
-
+import {motion }  from 'framer-motion'
 
 
 
@@ -65,8 +65,19 @@ export default function LandingPage() {
    };
 
 
+   const containerVariant= {
+    exit:{
+      x:'-100vw',
+      transition:{
+        ease:'easeInOut'
+      }
+    }
+   }
+
+
+
   return (
-    <div className='mission'   >
+    <motion.div className='mission' variants={containerVariant}  exit='exit'  >
       <div className='xs:z-10 xs:relative'>
 
         <TopPage topRef={topRef} className= 'xs:z-30 xs:relative' />
@@ -83,6 +94,6 @@ export default function LandingPage() {
          <Contact  contactRef={contactRef}/>  
          <Footer />
          
-    </div>
+    </motion.div>
   )
 }

@@ -7,9 +7,9 @@ export default function Team( {teamRef}) {
           <h1 className='text-[white] text-[45px] font-[600] xs:text-center'>Meet Our Team</h1>
           <div className='flex items-center justify-center gap-[30px] xs:flex-col  md:flex-col' >
             <div className='bg-[white] w-[25vw] h-[60vh] p-3 rounded-[20px] flex flex-col items-center justify-center gap-[10px] xs:w-[340px] md:w-[400px]  lg:w-[350px]'>
-              <div className='h-[250px] w-[250px] mt-[15px] '>
+              <div className=' w-[250px] mt-[15px] h-[250px] overflow-hidden rounded-[20px]'>
 
-                <img  src='images/tiffany.jpg' alt='Tiffany Gulumba' className='rounded-[20px] object-cover h-[220px] w-[280px]'/> 
+                <img  src='images/tiffany.jpeg' alt='Tiffany Gulumba' className='w-full h-auto '/> 
               </div>
               <div className='text-center'>
 

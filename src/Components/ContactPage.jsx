@@ -2,6 +2,7 @@ import React, {useEffect, useRef, useState} from 'react'
 import Navbar from './Navbar'
 import Contact from './Contact'
 import Footer from './Footer'
+import {motion} from 'framer-motion'
 
 export default function ContactPage() {
 
@@ -49,8 +50,17 @@ const handleIntersection = (entries, section) => {
     });
   };
 
+  const containerVariant= {
+    exit:{
+      x:'-100vw',
+      transition:{
+        ease:'easeInOut'
+      }
+    }
+   }
+
   return (
-    <div>
+    <motion.div variants={containerVariant} exit='exit'>
 <div className='mission'>
 <Navbar color={color}/> 
 </div>
@@ -58,6 +68,6 @@ const handleIntersection = (entries, section) => {
 <Footer/>
 
 
-    </div>
+    </motion.div>
   )
 }

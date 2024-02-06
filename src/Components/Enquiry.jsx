@@ -5,7 +5,7 @@ import {db} from '../util/firebase'
 // import { doc, updateDoc, arrayUnion, Timestamp, serverTimestamp, onSnapshot} from "firebase/firestore";
 import {v4 as uuid}  from 'uuid'
 import { useNavigate } from 'react-router-dom';
-
+import {motion} from 'framer-motion'
 
 
 
@@ -81,13 +81,20 @@ try{
      } 
 
   
-
+     const containerVariant= {
+      exit:{
+        x:'-100vw',
+        transition:{
+          ease:'easeInOut'
+        }
+      }
+     }
 
 
 
 
   return (
-    <div className='w-[100vw]  mission'>
+    <motion.div className='w-[100vw]  mission' variants={containerVariant} exit='exit' > 
      <div className='w-[90vw] p-[25px] m-[auto] flex flex-col items-center justify-center xs:w-[100vw]'> 
              <h1 className='text-[45px] font-[800] text-[#4F6F52] mb-[25px] xs:text-center xs:text-[37px]'>
                 Make an Enquiry
@@ -152,6 +159,6 @@ Please make us aware of your preferences, and we will reach out to you <br/> via
 
      <Footer/>
 
-    </div>
+    </motion.div>
   )
 }

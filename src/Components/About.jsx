@@ -2,6 +2,7 @@ import React, { useEffect,useRef} from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import {Link} from 'react-router-dom'
+import {motion} from 'framer-motion'
 
 
 
@@ -56,13 +57,20 @@ const handleIntersection = (entries, section) => {
 
 
 
-  
+  const containerVariant= {
+    exit:{
+      x:'-100vw',
+      transition:{
+        ease:'easeInOut'
+      }
+    }
+   }
 
 
 
 
   return (
-    <div  className='toppage mission'>
+    <motion.div  className='toppage mission' variants ={containerVariant} exit='exit' >
 
     <div className='about h-[100vh] w-[100vw]'>
       <div className='about-container' ref={topRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
@@ -136,6 +144,6 @@ const handleIntersection = (entries, section) => {
           </Link>
     </div>
     <Footer/>
-    </div>
+    </motion.div>
   )
 }

@@ -1,6 +1,7 @@
 import React, {useRef, useEffect} from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import {motion} from 'framer-motion'
 
 export default function ServicePage() {
 
@@ -56,11 +57,18 @@ const handleIntersection = (entries, section) => {
     });
   };
 
-
+  const containerVariant= {
+    exit:{
+      x:'-100vw',
+      transition:{
+        ease:'easeInOut'
+      }
+    }
+   }
 
 
   return (
-    <div className='mission'>
+    <motion.div className='mission'  variants={containerVariant} exit='exit'>
      
     <div className='service-page h-[100vh] w-[100vw]'>
       <div className='service-page-container' ref={topRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}>
@@ -186,6 +194,6 @@ const handleIntersection = (entries, section) => {
 </div>
 <Footer/>
 
-    </div>
+    </motion.div>
   )
 }

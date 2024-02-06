@@ -1,5 +1,5 @@
 import React, {useRef, useEffect} from 'react';
-import { Route, Routes, Navigate, useNavigate , } from 'react-router-dom';
+import { Route, Routes, Navigate, useNavigate , useLocation} from 'react-router-dom';
 import LandingPage from './Components/LandingPage';
 import Enquiry from './Components/Enquiry';
 import Signup from './Components/Signup';
@@ -11,11 +11,12 @@ import ContactPage from './Components/ContactPage'
 import PrivateRoute from './Components/PrivateRoute';
 import { useAuthContext } from './util/AuthContext';
 import ScrollToTop from './Components/ScrollToTop';
+import {AnimatePresence} from 'framer-motion'
 
 
 function App() {
 
-
+const location = useLocation()
   const windowWidth = window.innerWidth
   console.log('window width:', windowWidth, 'pixels')
 
@@ -65,7 +66,9 @@ const handleIntersection = (entries, section) => {
   return (
 
     <div>
-    <Routes>
+      <AnimatePresence mode='wait'>
+
+    <Routes location={location} key={location.key}>
 
 
 
@@ -89,6 +92,7 @@ const handleIntersection = (entries, section) => {
         element={currentUser ? <Admin /> : <Navigate to="/login" />}
       /> */}
  </Routes>
+      </AnimatePresence>
     </div>
   );
 }
