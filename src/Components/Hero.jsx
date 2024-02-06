@@ -7,7 +7,7 @@ export default function Hero({topRef}) {
       <div className='w-[45vw] xs:w-[100%] xs:flex xs:flex-col xs:justify-center lg:w-[85vw] lg:m-[auto] lg:mt-[30px]' ref={topRef} style={{ opacity: 0, transition: 'opacity 1s ease-in' }}> 
       
 
-      <h2 className='text-[23px] mt-[10px] font-[700] text-[white] xs:text-[22px]  xs:w-[100%] xs:mt-[20px]  lg:text-[22px] '>
+      <h2 className='text-[23px] mt-[10px] font-[700] text-[white] xs:text-[20px]  xs:w-[100%] xs:mt-[20px]  lg:text-[22px] '>
       Welcome to Birch social limited, a Domiciliary,  supported Living and live in care provider providing care for people with Dementia,  mental health, 
        challenging behaviour, Autism and learning disabilities for people of 18 to 65+ in own home (Home care)  Supported Living accommodation.
       </h2>
