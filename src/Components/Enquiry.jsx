@@ -128,7 +128,7 @@ Please make us aware of your preferences, and we will reach out to you <br/> via
             <div className='flex items-center gap-[10px] text-[17px] font-[300] xs:mt-[20px] ' >
                 <label className='xs:text-[15px]'>
 
-              <input type='radio' name='enquire' required checked={enquiry === 'Care for yourselfor a loved one' } value={'Care for yourself or a loved one'} onChange={(e) => setEnquiry(e.target.value)} /> Care for yourself or a loved one
+              <input type='radio' name='enquire' required checked={enquiry === 'Care for yourself or a loved one' } value="Care for yourself or a loved one" onChange={(e) => setEnquiry(e.target.value)} /> Care for yourself or a loved one
                 </label>
                 <label className='xs:text-[15px]'>
 

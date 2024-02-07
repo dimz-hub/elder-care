@@ -42,7 +42,7 @@ code {
 
 
 .hero{
-  background: url('../public/images/nurse4.jpg') center/cover no-repeat;
+  background: url('../public/images/nurse4.webp') center/cover no-repeat;
   height: 100vh;
   width: 100vw;
   position:relative
@@ -60,7 +60,7 @@ code {
   
 }
 .about{
-  background: url('../public/images/about4.jpg') center/cover no-repeat;
+  background: url('../public/images/about4.webp') center/cover no-repeat;
   height: 100vh;
   width: 100vw;
   position:relative
@@ -78,7 +78,7 @@ code {
   
 }
 .service-page{
-  background: url('../public/images/modern5.jpg') center/cover no-repeat;
+  background: url('../public/images/modern5.webp') center/cover no-repeat;
   height: 100vh;
   width: 100vw;
   position:relative

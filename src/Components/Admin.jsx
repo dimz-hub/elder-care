@@ -4,13 +4,13 @@ import { getDocs, collection } from 'firebase/firestore'
 import { db } from '../util/firebase'
 import { signOut } from "firebase/auth";
 import { auth } from '../util/firebase';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, } from 'react-router-dom';
 
 export default function Admin() {
    const {currentUser} = useAuthContext()
    const [enquires, setEnquiries] = useState([])
    const navigate = useNavigate()
-
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -33,7 +33,7 @@ export default function Admin() {
     };
 
     fetchData();
-  }, [currentUser?.uid]);
+  }, [currentUser]);
 
   function timeAgo(createdAtTimestamp) {
     // Convert the createdAt timestamp to a Date object
@@ -78,7 +78,8 @@ export default function Admin() {
 
 async function handleSignOut(){
    await signOut(auth)
-        navigate('/')
+   navigate('/')      
+        
       
 }
 
@@ -90,7 +91,7 @@ async function handleSignOut(){
           <div className='flex items-center justify-between'> 
             <h1 className ='font-[500] text-[40px] xs:text-[20px]'>
                
-                Welcome {currentUser.displayName}
+                Welcome {currentUser && currentUser.displayName}
                 </h1>
                 <button className=' hero-button p-3 outline-none bg-[black] text-[white] ml-[150px] w-[12rem] rounded-[10px]  font-[600] ' onClick={() => handleSignOut()}>
                     Logout

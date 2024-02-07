@@ -20,8 +20,10 @@ const [currentUser,setCurrentUser] = useState(null)
 const [loading,setLoading] = useState(true)
 useEffect(() => {
 const unsub = onAuthStateChanged(auth, (user) => {
-       setCurrentUser(user)
-       setLoading(false)
+  
+  setCurrentUser(user)
+  setLoading(false)
+ 
       });
 
       return () => {

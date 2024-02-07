@@ -12,17 +12,18 @@ import PrivateRoute from './Components/PrivateRoute';
 import { useAuthContext } from './util/AuthContext';
 import ScrollToTop from './Components/ScrollToTop';
 import {AnimatePresence} from 'framer-motion'
+import ProtectedRoute from './Components/ProtectedRoute';
 
 
 function App() {
 
 const location = useLocation()
-  const windowWidth = window.innerWidth
-  console.log('window width:', windowWidth, 'pixels')
+ 
+ 
 
 
   const {currentUser} = useAuthContext()
- const navigate= useNavigate()
+  
 
   const useIntersectionObserver = (callback, options = {}) => {
     const targetRef = useRef(null);
@@ -76,21 +77,21 @@ const handleIntersection = (entries, section) => {
  <Route path='/enquiry' element = {<Enquiry/>} />
  {/* <Route path='/signup' element = {<Signup/>} /> */}
  <Route path='/signin' element = {<Signin/>} />
- <Route path='/admin' element = {<Admin/>} />
  <Route path='/services' element = {<ServicePage/>} />
  <Route path='/about' element = {<About/>} />
  <Route path='/contact' element = {<ContactPage contactRef={contactRef} />} />
 
-  <Route path='/admin' element = {
-    <PrivateRoute>
-    <Admin />
-    </PrivateRoute>
-  } />   
-  {/* <PrivateRoute exact  path='/admin' element={<Admin/>}/> */}
-  {/* <Route
-        path="/admin"
-        element={currentUser ? <Admin /> : <Navigate to="/login" />}
-      /> */}
+   <Route path='/admin' element = {
+    <ProtectedRoute>
+     <Admin /> 
+    </ProtectedRoute>
+  } />    
+
+
+
+
+
+     
  </Routes>
       </AnimatePresence>
     </div>
