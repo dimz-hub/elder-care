@@ -1,13 +1,9 @@
 import React, {useEffect} from 'react'
-import { FaFacebook } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
-import Aos from 'aos'
+
 
 export default function Mission({missionRef}) {
 
-    // useEffect(() => {
-    //       Aos.init({duration:3000, delay:1000})
-    // },[])
+
 
   return (
     <div className=' w-[100vw] [h-100vh]'>

@@ -1,5 +1,5 @@
 import React, {useRef, useEffect} from 'react';
-import { Route, Routes, Navigate, useNavigate , useLocation} from 'react-router-dom';
+import { Route, Routes, useLocation} from 'react-router-dom';
 import LandingPage from './Components/LandingPage';
 import Enquiry from './Components/Enquiry';
 import Signup from './Components/Signup';
@@ -8,9 +8,6 @@ import Signin from './Components/Signin';
 import About from './Components/About';
 import ServicePage from './Components/ServicePage';
 import ContactPage from './Components/ContactPage'
-import PrivateRoute from './Components/PrivateRoute';
-import { useAuthContext } from './util/AuthContext';
-import ScrollToTop from './Components/ScrollToTop';
 import {AnimatePresence} from 'framer-motion'
 import ProtectedRoute from './Components/ProtectedRoute';
 
@@ -19,10 +16,6 @@ function App() {
 
 const location = useLocation()
  
- 
-
-
-  const {currentUser} = useAuthContext()
   
 
   const useIntersectionObserver = (callback, options = {}) => {

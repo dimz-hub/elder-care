@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 // import {signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../util/firebase';
-import {  setPersistence, signInWithEmailAndPassword, browserSessionPersistence } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import {motion} from 'framer-motion'
 
 
@@ -10,7 +10,9 @@ export default function Signin() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState(false)
-  
+
+    const [showPassword, setShowPassword] = useState(false)
+   
   
     const navigate = useNavigate()
   
@@ -57,10 +59,11 @@ export default function Signin() {
          <p className=' font-[500] text-[22px] text-[white]'>For admin use only </p>
          <form onSubmit={ (e) =>handleSubmit(e)}  className='flex flex-col items-center justify-center gap-[30px] mt-[10px] '>
           <span className = ' xs:mb-[20px]'>
-          <input type='email' id='email' className=' signup-input rounded-[10px] text-[black]  h-[40px] w-[300px]' placeholder='email' onChange={(e) => setEmail(e.target.value)}  required/>
+          <input type='email' id='email' className=' pl-[10px] signup-input rounded-[10px] text-[black]  h-[40px] w-[300px]' placeholder='email' onChange={(e) => setEmail(e.target.value)}  required/>
           </span>
-        <span className = ' xs:mb-[20px]'>
-          <input type='password'id='password' className=' signup-input rounded-[10px] text-[black]  h-[40px] w-[300px]' placeholder='password' onChange={(e) => setPassword(e.target.value)} required/>
+        <span className = ' relative  xs:mb-[20px]'>
+          <input type={showPassword? 'text' :'password'}id='password' className=' pl-[10px] signup-input rounded-[10px] text-[black]  h-[40px] w-[300px]' placeholder='password' onChange={(e) => setPassword(e.target.value)} required/>
+        <div  className='absolute right-[12px] top-[10px] font-[500] cursor-pointer' onClick ={() => setShowPassword(!showPassword)}>{showPassword ? 'Hide' : 'Show'}</div>
         </span>
          <button className=' hero-button p-3 outline-none bg-[black] text-[white]  w-[12rem] rounded-[10px] mt-[15px] font-[600] '>SignIn</button>
         
