@@ -307,9 +307,9 @@ animation: fadeIn 3s ease-out 0.5s forwards;
 
 
 @media screen and (max-width:800px) {
-  .hero{
-    background-image: url(../public/images/nurse4.jpg);
-    background-position: 34%;
+  .hero::before{
+
+    background-position: 24%;
   }
    /* .showlink{
     height: 70vh;
