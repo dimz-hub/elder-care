@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.104c1ddc.css",
+    "main.js": "/static/js/main.e9f03301.js",
+    "static/media/women2.jpg": "/static/media/women2.bb5028c52a493570fb51.jpg",
+    "static/media/about4.webp": "/static/media/about4.8faee6a6ec31084aa623.webp",
+    "static/media/modern5.webp": "/static/media/modern5.005d00945aa9e1279c1d.webp",
+    "static/media/nurse4.webp": "/static/media/nurse4.1f33417a773290bdd9d4.webp",
+    "index.html": "/index.html",
+    "main.104c1ddc.css.map": "/static/css/main.104c1ddc.css.map",
+    "main.e9f03301.js.map": "/static/js/main.e9f03301.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.104c1ddc.css",
+    "static/js/main.e9f03301.js"
+  ]
+}
