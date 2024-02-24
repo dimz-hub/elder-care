@@ -1,40 +1,23 @@
 import React from 'react';
-import { hydrate, render } from 'react-dom'; // Import hydrate and render from 'react-dom'
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthContextProvider } from './util/AuthContext';
-import { HelmetProvider } from 'react-helmet-async';
+import {HelmetProvider} from 'react-helmet-async'
 
-const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
 
-// Check if the root element already has child nodes
-if (rootElement.hasChildNodes()) {
-  // If it does, hydrate the app
-  hydrate(
-    <React.StrictMode>
-      <BrowserRouter>
-        <AuthContextProvider>
-          <HelmetProvider>
-            <App />
-          </HelmetProvider>
-        </AuthContextProvider>
-      </BrowserRouter>
-    </React.StrictMode>,
-    rootElement
-  );
-} else {
-  // If it doesn't, render the app
-  render(
-    <React.StrictMode>
-      <BrowserRouter>
-        <AuthContextProvider>
-          <HelmetProvider>
-            <App />
-          </HelmetProvider>
-        </AuthContextProvider>
-      </BrowserRouter>
-    </React.StrictMode>,
-    rootElement
-  );
-}
+    <BrowserRouter>
+    <AuthContextProvider>
+      <HelmetProvider>
+
+    <App />
+      </HelmetProvider>
+    </AuthContextProvider>
+    </BrowserRouter>
+  </React.StrictMode>
+);
+
