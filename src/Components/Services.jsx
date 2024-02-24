@@ -2,6 +2,7 @@ import React,{useEffect, useRef} from 'react'
 import { FaCross } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+
 export default function Services() {
 
   const useIntersectionObserver = (callback, options = {}) => {
@@ -44,6 +45,12 @@ const handleIntersection = (entries, section) => {
     });
   };
   return (
+
+
+     
+    
+    
+    
     <div className='services bg-[#294B29] w-[100vw] '>
       <div >
 
@@ -110,5 +117,7 @@ const handleIntersection = (entries, section) => {
       </div>
    
     </div>
+    
+    
   )
 }

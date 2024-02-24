@@ -5,6 +5,7 @@ import { db } from '../util/firebase'
 import { signOut } from "firebase/auth";
 import { auth } from '../util/firebase';
 import { useNavigate, } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 export default function Admin() {
    const {currentUser} = useAuthContext()
@@ -84,6 +85,15 @@ async function handleSignOut(){
 }
 
   return (
+    <>
+       <Helmet>
+      <title>
+        Admin
+      </title>
+      <meta name= 'description' content='This is for administrative use only'/>
+     <link rel= 'canonical' href='/admin' />
+    </Helmet>
+    
     <div className='w-[100vw]   min-h-[100vh]  mission'>
         <div className='w-[80vw] m-[auto]'>
             
@@ -134,5 +144,6 @@ async function handleSignOut(){
 
         </div>
     </div>
+  </>
   )
 }

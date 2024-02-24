@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { auth } from '../util/firebase';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import {motion} from 'framer-motion'
+import {Helmet} from 'react-helmet-async'
 
 
 export default function Signin() {
@@ -47,6 +48,17 @@ export default function Signin() {
    }
   
     return (
+
+      <>
+      
+      <Helmet>
+      <title>
+        Signin
+      </title>
+      <meta name= 'description' content='Admin signin here'/>
+     <link rel= 'canonical' href='/signin' />
+    </Helmet>
+      
       <motion.div className='mission h-[100vh] w-[100vw]  flex items-center justify-center' variants={containerVariant} exit='exit'>
   
       <div className='signup flex flex-col items-center rounded-[20px] h-[70vh] bg-[#294B29] w-[50%] pt-[40px] gap-[px] xs:w-[100%] xs:h-[100%] xs:rounded-none  xs:pt-[75px] md:w-[70%] '>
@@ -71,5 +83,6 @@ export default function Signin() {
           {error && <span>Something went wrong</span>}
          </div>
       </motion.div>
+      </>
     )
 }

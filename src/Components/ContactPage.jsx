@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Contact from './Contact'
 import Footer from './Footer'
 import {motion} from 'framer-motion'
+import { Helmet } from 'react-helmet-async'
 
 export default function ContactPage() {
 
@@ -60,6 +61,15 @@ const handleIntersection = (entries, section) => {
    }
 
   return (
+
+    <>
+       <Helmet>
+      <title>
+        Contact Us
+      </title>
+      <meta name= 'description' content='Get in touch with us to get access to the best services assisted living has to offer'/>
+     <link rel= 'canonical' href='/contact' />
+    </Helmet>
     <motion.div variants={containerVariant} exit='exit'>
 <div className='mission'>
 <Navbar color={color}/> 
@@ -69,5 +79,6 @@ const handleIntersection = (entries, section) => {
 
 
     </motion.div>
+    </>
   )
 }

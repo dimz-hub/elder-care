@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import {Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
-
+import { Helmet } from 'react-helmet-async'
 
 
 export default function About() {
@@ -70,6 +70,20 @@ const handleIntersection = (entries, section) => {
 
 
   return (
+
+  <>
+  
+  <Helmet>
+      <title>
+        About
+      </title>
+      <meta name= 'description' content='We want you to get the care you deserve'/>
+     <link rel= 'canonical' href='/about' />
+    </Helmet>
+
+
+
+
     <motion.div  className='toppage mission' variants ={containerVariant} exit='exit' >
 
     <div className='about h-[100vh] w-[100vw]'>
@@ -145,5 +159,6 @@ const handleIntersection = (entries, section) => {
     </div>
     <Footer/>
     </motion.div>
+    </>
   )
 }

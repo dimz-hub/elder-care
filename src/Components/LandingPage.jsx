@@ -9,7 +9,7 @@ import Team from './Team'
 import Contact from './Contact'
 import Footer from './Footer'
 import {motion }  from 'framer-motion'
-
+import { Helmet } from 'react-helmet-async'
 
 
 
@@ -77,6 +77,17 @@ export default function LandingPage() {
 
 
   return (
+
+    <>
+    <Helmet>
+      <title>
+        Home
+      </title>
+      <meta name= 'description' content=' Welcome to Birch social limited, a domiciliary, supported living and live in care provider providing care for people with dementia mental health,....'/>
+     <link rel= 'canonical' href='/' />
+    </Helmet>
+
+
     <motion.div className='mission' variants={containerVariant}  exit='exit'  >
       <div className='xs:z-10 xs:relative'>
 
@@ -95,5 +106,6 @@ export default function LandingPage() {
          <Footer />
          
     </motion.div>
+    </>
   )
 }

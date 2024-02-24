@@ -6,6 +6,7 @@ import {db} from '../util/firebase'
 import {v4 as uuid}  from 'uuid'
 import { useNavigate } from 'react-router-dom';
 import {motion} from 'framer-motion'
+import {Helmet} from 'react-helmet-async'
 
 
 
@@ -94,6 +95,16 @@ try{
 
 
   return (
+
+    <>
+           <Helmet>
+      <title>
+        Enquiry
+      </title>
+      <meta name= 'description' content='Let us know your needs and how best we can help'/>
+     <link rel= 'canonical' href='/enquiry' />
+    </Helmet>
+  
     <motion.div className='w-[100vw]  mission' variants={containerVariant} exit='exit' > 
      <div className='w-[90vw] p-[25px] m-[auto] flex flex-col items-center justify-center xs:w-[100vw]'> 
              <h1 className='text-[45px] font-[800] text-[#4F6F52] mb-[25px] xs:text-center xs:text-[37px]'>
@@ -160,5 +171,6 @@ Please make us aware of your preferences, and we will reach out to you <br/> via
      <Footer/>
 
     </motion.div>
+    </>
   )
 }

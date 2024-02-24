@@ -2,6 +2,7 @@ import React, {useRef, useEffect} from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import {motion} from 'framer-motion'
+import { Helmet } from 'react-helmet-async'
 
 export default function ServicePage() {
 
@@ -68,6 +69,14 @@ const handleIntersection = (entries, section) => {
 
 
   return (
+    <>
+          <Helmet>
+      <title>
+        Services
+      </title>
+      <meta name= 'description' content='We offer a wide range of services such as domilicary care, supported living and companionship'/>
+     <link rel= 'canonical' href='/services' />
+    </Helmet>
     <motion.div className='mission'  variants={containerVariant} exit='exit'>
      
     <div className='service-page h-[100vh] w-[100vw]'>
@@ -195,5 +204,6 @@ const handleIntersection = (entries, section) => {
 <Footer/>
 
     </motion.div>
+    </>
   )
 }
