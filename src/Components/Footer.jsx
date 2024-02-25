@@ -33,6 +33,10 @@ export default function Footer() {
   <img src='images/uk-logo.png' alt='uk flag' className='w-[50px] h-[50px]' />
 <p className='text-[20px] font-[600]'>United Kingdom</p>
     </div>
+    <div className='flex item-center justify-center mt-[10px] mb-[10px]'>
+
+<img src='images/care-quality.jpg' className='w-[150px] h-[auto]' alt='care quality commision'  />
+    </div>
 
 <p>
   Copyright <span>&copy;</span>Birch Limited {currentYear}

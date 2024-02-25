@@ -8,7 +8,7 @@ export default function Hero({topRef}) {
       
 
       <h2 className='text-[23px] mt-[10px] font-[700] text-[white] xs:text-[20px]  xs:w-[100%] xs:mt-[20px]  lg:text-[22px] '>
-      Welcome to Birch social limited, a Domiciliary,  supported Living and live in care provider providing care for people with Dementia,  mental health, 
+      Welcome to Birch social limited  regulated by care quality commission. A Domiciliary,  supported Living and live in care provider providing care for people with Dementia,  mental health, 
        challenging behaviour, Autism and learning disabilities for people of 18 to 65+ in own home (Home care)  Supported Living accommodation.
       </h2>
       <p className='text-[white]  text-[15px]  xs:text-left font-[400] text-[20px] mt-[10px] xs:text-[15px] xs:mt-[15px] '>
