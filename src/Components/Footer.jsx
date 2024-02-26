@@ -35,7 +35,7 @@ export default function Footer() {
     </div>
     <div className='flex item-center justify-center mt-[10px] mb-[10px]'>
 
-<img src='images/care-quality.jpg' className='w-[150px] h-[auto]' alt='care quality commision'  />
+<img src='images/care-quality.jpg' className='w-[130px] h-[auto]' alt='care quality commision' />
     </div>
 
 <p>
