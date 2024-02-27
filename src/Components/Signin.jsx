@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { auth } from '../util/firebase';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import {motion} from 'framer-motion'
-import {Helmet} from 'react-helmet-async'
+import {Helmet} from 'react-helmet'
 
 
 export default function Signin() {

@@ -6,7 +6,7 @@ import {db} from '../util/firebase'
 import {v4 as uuid}  from 'uuid'
 import { useNavigate } from 'react-router-dom';
 import {motion} from 'framer-motion'
-import {Helmet} from 'react-helmet-async'
+import {Helmet} from 'react-helmet'
 
 
 

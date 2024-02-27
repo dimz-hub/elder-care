@@ -5,7 +5,7 @@ import { db } from '../util/firebase'
 import { signOut } from "firebase/auth";
 import { auth } from '../util/firebase';
 import { useNavigate, } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 export default function Admin() {
    const {currentUser} = useAuthContext()

@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import {Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
-import { Helmet } from 'react-helmet-async'
+import { Helmet } from 'react-helmet'
 
 
 export default function About() {

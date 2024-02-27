@@ -9,7 +9,7 @@ import Team from './Team'
 import Contact from './Contact'
 import Footer from './Footer'
 import {motion }  from 'framer-motion'
-import { Helmet } from 'react-helmet-async'
+import { Helmet } from 'react-helmet'
 
 
 

@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthContextProvider } from './util/AuthContext';
-import {HelmetProvider} from 'react-helmet-async'
+// import {HelmetProvider} from 'react-helmet'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,10 +12,10 @@ root.render(
 
     <BrowserRouter>
     <AuthContextProvider>
-      <HelmetProvider>
+      
 
     <App />
-      </HelmetProvider>
+      
     </AuthContextProvider>
     </BrowserRouter>
   </React.StrictMode>
