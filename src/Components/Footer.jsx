@@ -17,17 +17,21 @@ export default function Footer() {
 <div className='text-center ml-[20px]'>
 
 <p className='text-[20px] font-[600]'>
-  Tiffany@joinbirch.org
+  Sade@joinbirch.org
 </p>
 
-    <p className='text-[20px] font-[600] mt-[10px]'>07597936369
+    <p className='text-[20px] font-[600] mt-[10px]'>07724537007
 </p>
     <div className='mt-[10px]'>
     <p className='text-[20px] font-[600]'>
-      86-90 Paul Street
+      Dorset office, Unit 20
     </p>
-    <p className='text-[20px] font-[600]'>London,EC2A 4NE</p>
+    <p className='text-[20px] font-[600]'>
+      15 jubilee close, Weymouth
+    </p>
+    <p className='text-[20px] font-[600]'>Dorset, DT4 7BS</p>
     </div>
+   
 
     <div className='flex items-center justify-center gap-[12px] mt-[5px]'>
   <img src='images/uk-logo.png' alt='uk flag' className='w-[50px] h-[50px]' />

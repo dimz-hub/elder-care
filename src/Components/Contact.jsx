@@ -22,23 +22,23 @@ export default function Contact({contactRef}) {
           <h3 className='font-[600] text-[50px] xs:text-[30px] xs:mb-[30px] text-[#4F6F52]'>Get in touch with us</h3>
           <div className='xs:flex xs:flex-col xs:gap-[10px] xs:pl-[]'>
             <div className='flex   gap-[20px] items-center xs:text-center xs:w-[100vw]  xs:gap-[10px] xs:items-center  xs:flex-col'>
-                <div className='font-[500] text-[40px]  xs:text-[25px] xs:font-[600]' >Numbers<span className='xs:hidden'>:</span></div>
+                <div className='font-[500] text-[35px]  xs:text-[25px] xs:font-[600]' >Number<span className='xs:hidden'>:</span></div>
                 <div className='flex items-center gap-[8px] mt-[10px] xs:mt-[5px] xs:flex-col xs:gap-[5px] '>
  
-            <p className='text-[20px]  font-[600] xs:text-[19px] '>07597936369</p>
+         
             <p className='text-[20px]  font-[600] xs:text-[19px]'>07724537007</p>
                 </div>
             </div>
             <div className='flex items-center gap-[20px]  xs:flex-col xs:gap-[10px]'>
-                <div className='font-[500] text-[40px] xs:text-[25px]  xs:font-[600]'>Emails<span className='xs:hidden' >:</span></div>
+                <div className='font-[500] text-[35px] xs:text-[25px]  xs:font-[600]'>Email<span className='xs:hidden' >:</span></div>
                 <div className='flex gap-[10px] items-center mt-[10px] xs:gap-[5px] xs:mt-[5px] xs:flex-col'>
 
             <p className='text-[20px] font-[500] xs:text-[19px]'>Sade@joinbirch.org</p>
-            <p className='text-[20px] font-[500] xs:text-[19px]'>Tiffany@joinbirch.org </p>
+           
                 </div>
             </div>
             <div className='flex items-center gap-[20px] xs:flex-col xs:gap-[10px]' >
-                <div className='font-[500] text-[40px] xs:text-[25px] xs:font-[600]' >Socials<span className='xs:hidden'>:</span></div>
+                <div className='font-[500] text-[35px] xs:text-[25px] xs:font-[600]' >Socials<span className='xs:hidden'>:</span></div>
                 <div className='flex items-center gap-[10px] jusify-center'>
 
                   <div onClick={redirectToFacebook} className='cursor-pointer'>
@@ -60,8 +60,8 @@ export default function Contact({contactRef}) {
           </div>
             </div>
             
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.323703969503!2d-0.08620558822051579!3d51.52562237169987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca55fcfa5e5%3A0x18b5f6c296424be2!2sOFFICE%2086%2C%2090%20Paul%20St%2C%20London%20EC2A%204NE%2C%20UK!5e0!3m2!1sen!2sng!4v1705757569490!5m2!1sen!2sng" width="600" height="450" style={{border:"0"}} allowfullscreen="" className=' xs:w-[350px] xs:h-[350px] xs:rounded-[20px] xs:mb-[20px]' loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
+            {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.323703969503!2d-0.08620558822051579!3d51.52562237169987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca55fcfa5e5%3A0x18b5f6c296424be2!2sOFFICE%2086%2C%2090%20Paul%20St%2C%20London%20EC2A%204NE%2C%20UK!5e0!3m2!1sen!2sng!4v1705757569490!5m2!1sen!2sng" width="600" height="450" style={{border:"0"}} allowfullscreen="" className=' xs:w-[350px] xs:h-[350px] xs:rounded-[20px] xs:mb-[20px]' loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d158.21754701703125!2d-2.457741!3d50.6181854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4872f7a595a9c1f1%3A0x41447223c508f9b6!2sBasepoint%20-%20Weymouth%2C%20Jubilee%20Close!5e0!3m2!1sen!2sng!4v1731611630219!5m2!1sen!2sng" width="600" height="450" style={{border:"0"}} allowfullscreen="" className=' xs:w-[350px] xs:h-[350px] xs:rounded-[20px] xs:mb-[20px]' loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
           </div>
